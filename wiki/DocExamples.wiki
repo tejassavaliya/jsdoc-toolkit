@@ -31,7 +31,7 @@ function recast(employeeId, newRole) {
 
 {{{
 record = {
-    delete: function() {
+    remove: function() {
     }
 };
 
@@ -43,8 +43,8 @@ record.refresh = function(record) {
 
 {{{
 record = {
-    /** delete the record. */
-    delete: function() {
+    /** Remove the record. */
+    remove: function() {
     }
 };
 }}}
