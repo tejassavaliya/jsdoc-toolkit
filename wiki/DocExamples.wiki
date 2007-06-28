@@ -185,3 +185,21 @@ var CONFIG = {
     }
 };
 }}}
+
+= File Overview =
+
+  * You can create a doc comment that applies to the _entire file_ by using the `@fileOverview` tag.
+  * The human-readable name of the library can be set by using the `@library` tag. This name will be used in index listings, otherwise the filename will be used.
+
+{{{
+/**
+ * @fileOverview A collection of functions for records.
+ * @library Record Keeper
+ */
+ 
+/** 
+ * Gets the current record. 
+ */
+function getRecord(){
+}
+}}}
