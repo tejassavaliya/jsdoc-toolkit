@@ -55,8 +55,8 @@ record = {
 record = {
     row: {
          field: {
-            /** delete the record. */
-            delete: function() {
+            /** Remove the record. */
+            remove: function() {
             }
         }
     }
