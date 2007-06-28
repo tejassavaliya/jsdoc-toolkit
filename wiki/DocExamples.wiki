@@ -208,3 +208,36 @@ var CONFIG = {
 function getRecord(){
 }
 }}}
+
+= Virtual Objects =
+
+  * In some cases you want to document an object that either isn't in the source code, or is written in a way that can't be recognized by the !JsDoc parser. Use the `@name` tag to provide the name of the object.
+  * Note that this technique will _force_ the comment to be treated separately from the code around it. So, even if there is a recognizable function after the comment, that function will not be treated as connected to the comment in any way.
+
+{{{
+/**
+ * The file index.
+ * @name fileIndex
+ */
+}}}
+
+  * You can add other tags, just like an ordinary doc comment. If the thing you are documenting is a function add the `@function` tag, if it is a constructor add the `@constructor` tag. If neither of these are found it will be assumed to be an object (variable).
+
+{{{
+/**
+ * A file indexer.
+ * @name Indexer
+ * @constructor
+ */
+}}}
+
+  * If the virtual object is a method it must be tagged with `@function` and additionally a `@memberOf` tag, indicating the name of the parent object.
+
+{{{
+/**
+ * Get the file's index.
+ * @name getIndex
+ * @function
+ * @memberOf Indexer
+ */
+}}}
