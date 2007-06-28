@@ -260,3 +260,11 @@ framework.createClass(
 }}}
 
   * In the above example the parser will find a function named: `FileWatcher.Widget.initialize`.
+  * Another example of using this technique...
+{{{
+var Record = new function() {
+    return /** @namespace Record */ {
+        getRecord: function() {}
+    };
+}
+}}}
