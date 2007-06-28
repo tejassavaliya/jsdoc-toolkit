@@ -1,0 +1,71 @@
+#summary Examples of how to add doc comments to your source code.
+
+= Introduction =
+
+These are examples of how to add doc comments to your source code.
+
+
+= Functions =
+
+  * Use the -a option to have all functions and their parameters appear in your output.
+
+{{{
+function recast(employeeId, newRole) {
+}
+
+refresh = function(record) {
+}
+}}}
+
+  * Add a description of the function.
+
+{{{
+/** Change the tole of the employee. */
+function recast(employeeId, newRole) {
+}
+}}}
+
+= Nested Functions =
+
+  * Use the -a option to have all functions and their parameters appear in your output.
+
+{{{
+record = {
+    delete: function() {
+    }
+};
+
+record.refresh = function(record) {
+}
+}}}
+
+  * Add a description of the nested function.
+
+{{{
+record = {
+    /** delete the record. */
+    delete: function() {
+    }
+};
+}}}
+
+  * Same for arbitrarily deeply nested functions.
+
+{{{
+record = {
+    row: {
+         field: {
+            /** delete the record. */
+            delete: function() {
+            }
+        }
+    }
+};
+}}}
+
+
+
+
+
+
+
