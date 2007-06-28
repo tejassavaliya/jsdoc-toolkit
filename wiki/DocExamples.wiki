@@ -100,7 +100,7 @@ function RecordSet() {
 {{{
 /** @constructor */
 function RecordSet() {
-    this.getRecords(){
+    this.getRecords = function(){
     }
 }
 }}}
@@ -109,9 +109,10 @@ function RecordSet() {
 
 {{{
 /** @constructor */
+/** @constructor */
 function RecordSet() {
     /** Get all the records. */
-    this.getRecords(){
+    this.getRecords = function(){
     }
 }
 }}}
