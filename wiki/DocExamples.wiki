@@ -153,6 +153,18 @@ function RecordSet(id) {
 }
 }}}
 
+= Properties that are Methods =
+
+  * In practice a "method" is just a property whose value is set to a function. Because !JavaScript does not enforce types it's possible to set a property to either a function or non-function at runtime. In cases where it isn't obvious from the source code what a property is going to be set to, use the `@function` tag to make it clear.
+
+{{{
+/** @constructor */
+function RecordSet(f) {
+    /** @function */
+    this.write = f;
+}
+}}}
+
 = Variables =
 
   * The `-a` option does not apply to variables. Only documented variables appear in the output.
