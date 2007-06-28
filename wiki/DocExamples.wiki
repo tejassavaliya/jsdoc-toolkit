@@ -20,7 +20,7 @@ refresh = function(record) {
   * Alternatively add a description of the function. Documented functions always appear in the output, even withou the `-a` option.
 
 {{{
-/** Change the tole of the employee. */
+/** Change the role of the employee. */
 function recast(employeeId, newRole) {
 }
 }}}
@@ -185,4 +185,3 @@ var CONFIG = {
     }
 };
 }}}
-
