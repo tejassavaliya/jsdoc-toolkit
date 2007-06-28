@@ -17,7 +17,7 @@ refresh = function(record) {
 }
 }}}
 
-  * Add a description of the function.
+  * Optionally add a description of the function.
 
 {{{
 /** Change the tole of the employee. */
@@ -27,7 +27,7 @@ function recast(employeeId, newRole) {
 
 = Nested Functions =
 
-  * Use the -a option to have all functions and their parameters appear in your output.
+  * Use the -a option to have all nested functions and their parameters appear in your output.
 
 {{{
 record = {
@@ -39,7 +39,7 @@ record.refresh = function(record) {
 }
 }}}
 
-  * Add a description of the nested function.
+  * Optionally add a description of the nested function.
 
 {{{
 record = {
@@ -63,9 +63,59 @@ record = {
 };
 }}}
 
+= Constructors =
 
+  * Use the @constructor tag to indicate a function is a constructor.
 
+{{{
+/** @constructor */
+function RecordSet() {
+}
+}}}
 
+  * Optionally add a description of the constructor.
 
+{{{
+/**
+ * A collection of records.
+ * @constructor
+ */
+function RecordSet() {
+}
+}}}
 
+= Methods =
+
+  * Use the -a option to have all nested functions, including methods, and their parameters appear in your output.
+
+{{{
+/** @constructor */
+function RecordSet() {
+    this.getRecords(){
+    }
+}
+}}}
+
+  * Optionally add a description of the method.
+
+{{{
+/** @constructor */
+function RecordSet() {
+    /** Get all the records. */
+    this.getRecords(){
+    }
+}
+}}}
+
+= Properties =
+
+  * The -a option does not apply to properties. Only documented properties appear in the output
+
+{{{
+/** @constructor */
+function RecordSet(id) {
+    /** The record set's id number */
+    this.id = id;
+}
+}}}
 
