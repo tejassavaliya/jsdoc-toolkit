@@ -180,7 +180,7 @@ var LIMIT = 99;
 /** The maximum number of records. */
 var CONFIG = {
     defaults: {
-        /** The default format **/
+        /** The default format. */
         format: "XML"
     }
 };
