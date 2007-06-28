@@ -67,6 +67,16 @@ function _peek(record) {
 }
 }}}
 
+= Ignoring Functions =
+
+  * To force a function to be ignored, when it would otherwise appear in the output, use the `@ignore` tag.
+
+{{{
+/** @ignore */
+function hide(file) {
+}
+}}}
+
 = Constructors =
 
   * Use the `@constructor` tag to indicate a function is a constructor.
