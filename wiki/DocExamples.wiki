@@ -1,10 +1,5 @@
 #summary Examples of how to add doc comments to your source code.
 
-= Introduction =
-
-These are examples of how to add doc comments to your source code.
-
-
 = Functions =
 
   * Use the `-a` option to have all functions and their parameters appear in your output.
