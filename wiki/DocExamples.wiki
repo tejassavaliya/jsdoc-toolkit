@@ -241,3 +241,22 @@ function getRecord(){
  * @memberOf Indexer
  */
 }}}
+
+= Namespaces =
+
+  * In complex cases it may be impossible for the !JsDoc parser to determine the scope and thus the full name of objects. In these cases the `@namespace` tag tells the parser what the parent-scope is of an object.
+  * The `@namespace` tag _must_ precede an object literal. Within that object any properties will be the applied to the given namespace.
+
+{{{
+framework.createClass(
+    "FileWatcher.Widget",
+    /** @namespace FileWatcher.Widget */
+    {
+        /** Set up the widget. */
+        initialize: function(container, args) {
+        }
+    }
+);
+}}}
+
+  * In the above example the parser will find a function named: `FileWatcher.Widget.initialize`.
