@@ -242,15 +242,15 @@ function getRecord(){
  */
 }}}
 
-= Namespaces =
+= Changing Scope=
 
-  * In complex cases it may be impossible for the !JsDoc parser to determine the scope and thus the full name of objects. In these cases the `@namespace` tag tells the parser what the parent-scope is of an object.
-  * The `@namespace` tag _must_ precede an object literal. Within that object any properties will be the applied to the given namespace.
+  * In complex cases it can be impossible for the !JsDoc parser to determine the scope and thus the full name of object properties and methods. In these cases the `@scope` tag tells the parser what the parent-scope is of a property or method.
+  * The `@scope` tag _must_ immediately precede the opening of an object literal. Within that object definition all properties will be the applied to the given containing scope.
 
 {{{
 framework.createClass(
     "FileWatcher.Widget",
-    /** @namespace FileWatcher.Widget */
+    /** @scope FileWatcher.Widget */
     {
         /** Set up the widget. */
         initialize: function(container, args) {
@@ -264,7 +264,7 @@ framework.createClass(
 
 {{{
 var Record = new function() {
-    return /** @namespace Record */ {
+    return /** @scope Record */ {
         getRecord: function() {}
     };
 }
