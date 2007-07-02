@@ -2,7 +2,7 @@
 
 = Functions =
 
-  * Use the `-a` option to have all functions and their parameters appear in your output.
+  * Use the `-a` option to cause all functions and their parameters appear in your output.
 
 {{{
 function recast(employeeId, newRole) {
@@ -12,7 +12,7 @@ refresh = function(record) {
 }
 }}}
 
-  * Alternatively add a description of the function. Documented functions always appear in the output, even withou the `-a` option.
+  * Alternatively add a description to the function. Documented functions always appear in the output, even without the `-a` option.
 
 {{{
 /** Change the role of the employee. */
@@ -22,7 +22,7 @@ function recast(employeeId, newRole) {
 
 = Nested Functions =
 
-  * Use the `-a` option to have all nested functions and their parameters appear in your output.
+  * Use the `-a` option to cause all nested functions and their parameters appear in your output.
 
 {{{
 record = {
@@ -34,7 +34,7 @@ record.refresh = function(record) {
 }
 }}}
 
-  * Optionally add a description of the nested function.
+  * Optionally add a description to the nested function.
 
 {{{
 record = {
@@ -44,7 +44,7 @@ record = {
 };
 }}}
 
-  * Same for arbitrarily deeply nested functions.
+  * Works for arbitrarily deeply nested functions too.
 
 {{{
 record = {
@@ -60,7 +60,8 @@ record = {
 
 = Underscored Functions =
 
-  * The `-a` option will generally include all functions in your output, but a special exception is made for functions named with a leading underscore. By convention an underscored name means a function is for internal use only, therefore not part of the public API. If you wish *all* functions, even underscored functions, to appear in your output use the `-A` option instead.
+  * The `-a` option will generally cause all functions to appear in your output, but a special exception is made for functions named with a leading underscore. By convention an underscored name means a function is for internal use only, therefore not part of the public API. If you wish *all* functions, even underscored functions, to appear in your output use the `-A` option instead.
+  * Documented functions and objects (those that have valid doc comments preceding them) will always appear in your output, regardless of any option. (See the `@ignore` tag to override this behavior.)
 
 {{{
 function _peek(record) {
@@ -87,7 +88,7 @@ function RecordSet() {
 }
 }}}
 
-  * Optionally add a description of the constructor.
+  * Optionally add a description to the constructor.
 
 {{{
 /**
@@ -110,7 +111,7 @@ function RecordSet() {
 }
 }}}
 
-  * Optionally add a description of the method.
+  * Optionally add a description to the method.
 
 {{{
 /** @constructor */
@@ -123,7 +124,7 @@ function RecordSet() {
 
 = Properties =
 
-  * The `-a` option does not apply to properties. Only documented properties appear in the output.
+  * The `-a` option does not apply to properties. Only documented properties (those that have valid doc comments preceding them) will appear in the output.
 
 {{{
 /** @constructor */
@@ -146,7 +147,7 @@ function RecordSet(id) {
 }
 }}}
 
-  * Alternatively you can describe the property in the constructor's comment.
+  * Or you can briefly describe the property in the constructor's comment instead.
  
 {{{
 /**
@@ -160,7 +161,7 @@ function RecordSet(id) {
 
 = Properties that are Methods =
 
-  * In practice a "method" is just a property whose value is set to a function. Because !JavaScript does not enforce types it's possible to set a property to either a function or non-function at runtime. In cases where it isn't obvious from the source code what a property is going to be set to, use the `@function` tag to make it clear.
+  * In practice a "method" is just a property whose value is set to a function. Because !JavaScript does not enforce types it's possible to set a property to either a function or non-function at any time. In cases where it isn't obvious from the source code what a property is going to be set to, use the `@function` tag to make it clear.
 
 {{{
 /** @constructor */
@@ -172,7 +173,7 @@ function RecordSet(f) {
 
 = Variables =
 
-  * The `-a` option does not apply to variables. Only documented variables appear in the output.
+  * The `-a` option does not apply to variables. Only documented variables (those that have valid doc comments preceding them) will appear in the output.
 
 {{{
 /** The maximum number of records. */
@@ -194,12 +195,12 @@ var CONFIG = {
 = File Overview =
 
   * You can create a doc comment that applies to the _entire file_ by using the `@fileOverview` tag.
-  * The human-readable name of the library can be set by using the `@library` tag. This name will be used in index listings, otherwise the filename will be used.
+  * The human-readable name of the library can be set by using the `@name` tag. This name will be used in index listings, otherwise the filename will be used.
 
 {{{
 /**
  * @fileOverview A collection of functions for records.
- * @library Record Keeper
+ * @name Record Keeper
  */
  
 /** 
