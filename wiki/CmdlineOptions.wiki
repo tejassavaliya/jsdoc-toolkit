@@ -16,7 +16,6 @@ _Note:_ This overview assumes you've changed your current working directory to t
 || Mac OS X || $ cd /where/ever/jsdoc-toolkit ||
 || Linux || % cd /where/ever/jsdoc-toolkit ||
 
-
 == Basic ==
 
 !JsDoc Toolkit runs via the Mozilla !JavaScript Engine, included with the !JsDoc Toolkit distribution. So all commands start with this...
@@ -89,4 +88,18 @@ If you are using an output template, by default the formatted output files will 
 
 {{{
 java -jar app/js.jar app/run.js -t=templates/htm -d=my_docs /myscripts/
+}}}
+
+== Documenting All Functions ==
+
+By default, only functions that you've written documentation comments for will appear in the output. If you want !JsDoc Toolkit to generate documentation for _all_ functions, even the uncommented ones, in your source code use the `-a` option.
+
+{{{
+java -jar app/js.jar app/run.js -t=templates/htm -a /myscripts/
+}}}
+
+It is a convention that if you name a function with an underscore as the first character, you intend it to be for internal use only, not part of the public API. If you wish all functions, even those that are uncommented and start with an underscore to be included in the output, use the `-A` option.
+
+{{{
+java -jar app/js.jar app/run.js -t=templates/htm -A /myscripts/
 }}}
