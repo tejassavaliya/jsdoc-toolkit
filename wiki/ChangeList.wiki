@@ -1,0 +1,12 @@
+#summary Listed by release number, what has changed.
+
+= Change List =
+
+=== 1.0.2 ===
+  * Fixed bug that appeared when using the -r option to recursively scan subdirectories.
+
+=== 1.0.1 ===
+  * Fixed bug that appeared when regex was very first symbol in source.
+
+=== 1.0.0 ===
+  * Initial release
