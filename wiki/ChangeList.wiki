@@ -3,11 +3,18 @@
 
 = Change List =
 
+=== 1.0.3 ===
+  * Added support for -p command line option to cause symbols marked with @private to appear in output - issue #9.
+  * Fixed problem that caused the loading of library files to fail on linux using Java 1.4. The implemented solution requires that the tool be run with the working directory set to the jsdoc-toolkit folder.
+
 === 1.0.2 ===
-  * Fixed bug that appeared when using the -r option to recursively scan subdirectories.
+  * Fixed bug that appeared when using the -r option to recursively scan subdirectories - issue #7.
+  * Added support for -x command line option, to cause source file with extensions other than the default .js to be scanned - issue #1.
 
 === 1.0.1 ===
-  * Fixed bug that appeared when regex was very first symbol in source.
+  * Fixed bug that appeared when regex was very first symbol in source - issue #3.
 
 === 1.0.0 ===
   * Initial release
+
+
