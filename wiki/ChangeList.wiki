@@ -3,6 +3,9 @@
 
 = Change List =
 
+=== 1.0.4 (not yet available) ===
+  * Fixed bug that appeared when using @scope tag on a prototype - issue #11.
+
 === 1.0.3 ===
   * Added support for -p command line option to cause symbols marked with @private to appear in output - issue #9.
   * Added support for @example tags in doc comments, which will now be displayed in the htm output.
