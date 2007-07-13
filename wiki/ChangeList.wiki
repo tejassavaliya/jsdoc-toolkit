@@ -6,6 +6,8 @@
 === 1.0.4 (not yet released) ===
   * Fixed bug that appeared when using @scope tag on a prototype - issue #11.
   * Added ability to display items tagged with @property on objects - issue #12.
+  * Added @returns as a synonym for @return - issue #14.
+  * Added support for @class and @classDescription tag, appended onto symbol description - issue #13.
 
 === 1.0.3 ===
   * Added support for -p command line option to cause symbols marked with @private to appear in output - issue #9.
@@ -21,4 +23,3 @@
 
 === 1.0.0 ===
   * Initial release
-
