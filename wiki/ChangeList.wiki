@@ -8,6 +8,7 @@
   * Added ability to display items tagged with @property on objects - issue #12.
   * Added @returns as a synonym for @return - issue #14.
   * Added support for @class and @classDescription tag, appended onto symbol description - issue #13.
+  * Fixed bug that caused an uncaught exception when a prototype assignment was commented - issue #16.
 
 === 1.0.3 ===
   * Added support for -p command line option to cause symbols marked with @private to appear in output - issue #9.
