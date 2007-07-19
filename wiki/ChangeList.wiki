@@ -10,8 +10,8 @@
   * Added support for @class and @classDescription tag, appended onto symbol description - issue #13.
   * Added @argument as a synonym for @param.
   * Fixed bug that caused an uncaught exception when a prototype assignment was commented - issue #16.
-  * Added support for @inherits tag which adds to the symbol.inheritedMethods array.
-  * Added @extends as a synonym for @inherits.
+  * Added support for @inherits tag which adds to the symbol.inheritedMethods array - issue #10.
+  * Added @extends as a synonym for @inherits - issue #15.
 
 === 1.0.3 ===
   * Added support for -p command line option to cause symbols marked with @private to appear in output - issue #9.
