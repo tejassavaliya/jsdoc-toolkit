@@ -1,0 +1,4 @@
+#summary Developers who have contributed code to JsDoc Toolkit.
+#labels Featured
+
+ * tj.rothwell: Added patch to allow running !JsDoc Toolkit from arbitrary working directory -- issue #19.
