@@ -3,6 +3,10 @@
 
 = Change List =
 
+=== 1.1.2 (not yet released) ===
+  * Added patch by tj.rothwell to allow running !JsDoc Toolkit from any directory - issue #19.
+  * Added library to do syntax hiliting, modified the `htm` template to create "view source code" links to hilited code - issue #20.
+
 === 1.1.1 ===
   * Fixed bug that caused an uncaught exception when a symbol extends/inherits a missing parent symbol - issue #17.
   * Added support for @static and @singleton tag, for use with the @class tag to prevent it being treated as a a constructor - issue #18.
