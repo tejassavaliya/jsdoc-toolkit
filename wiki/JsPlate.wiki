@@ -31,7 +31,7 @@ function publish(files, context) {
 }
 }}}
 
-As you can see, there is one function defined in the `publish.js` file: In the `publish` function you can add any code you like to handle the main publishing work. !JsDoc Toolkit will pass in an array of DocFiles along with the commandline options you provided when you invoked the application.
+As you can see, there is one function defined in the `publish.js` file: In the `publish` function you can add any code you like to handle the main publishing work. !JsDoc Toolkit will pass in an array of !DocFiles along with the commandline options you provided when you invoked the application.
 
 {{{
 function publish(data, context) {
@@ -202,7 +202,6 @@ From within your `publish.js` file you can copy files from the template director
 {{{
 	IO.copyFile(context.t+"mystyle.css", context.d);
 }}}
-
 
 
 
