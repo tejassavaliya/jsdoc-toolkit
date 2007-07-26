@@ -1,5 +1,35 @@
-#summary A doc comment tag reference
+#summary A reference page of tags used by Jsdoc Toolkit.
 
-= coming soon =
+== Tags For Functional Doclets ==
+Within doc comments of type: class, method or function, you may have one or more of these tags.
+
+|| *tag title*        || *syntax*                                                ||                                                               ||
+|| param          || @param _{type}_ *name* _description_    || explain a function parameter.                 ||
+|| param          || @param _{type}_ [*name*] _description_  || an optional parameter.                           ||
+|| returns         || @returns _{type}_ _description_               || explain a function return value.              ||
+|| throws         || @throws _{type}_ _description_                || explain an error a function can throw.    ||
+
+== Attribute Tags ==
+Some tags allow you to mark a doclet as having a particular attribute.
+
+|| *tag title*     || *syntax*          ||                                     ||
+|| private      || @private       || indicates the thing being documented is not intended to be used outside its own file.      ||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
