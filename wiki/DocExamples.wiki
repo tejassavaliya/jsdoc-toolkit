@@ -20,6 +20,22 @@ function recast(employeeId, newRole) {
 }
 }}}
 
+= Paramaters =
+
+  * Add the @param tag to your comment to document parameter. It takes the form `{type} name description`.
+
+{{{
+/**
+ * Change the role of the employee.
+ * @param {integer} employeeId The id of the employee.
+ * @param {string} [newRole] The new role of the employee.
+ */
+function recast(employeeId, newRole) {
+}
+}}}
+
+_Note:_ That the parameter `newRole` is surrounded by square-brackets to indicate it is optional.
+
 = Nested Functions =
 
   * Use the `-a` option to cause all nested functions and their parameters appear in your output.
@@ -270,3 +286,4 @@ var Record = new function() {
     };
 }
 }}}
+
