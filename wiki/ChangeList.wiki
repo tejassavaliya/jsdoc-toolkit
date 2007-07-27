@@ -8,6 +8,7 @@
   * Added library to do syntax hiliting, modified the `htm` template to create "view source code" links to hilited code - issue #20.
   * Fixed bug that affected constructor functions attached to a prototype, vs a method function attached to a prototype: in each case "this" means something different - issue #21.
   * Fixed bug that affected assigning the result of of an anonymous function call to a prototype.
+  * Added to the htm template to show when a parameter is optional. Optional parameters should be square-bracketed in the doc comment (revision 159).
 
 === 1.1.1 ===
   * Fixed bug that caused an uncaught exception when a symbol extends/inherits a missing parent symbol - issue #17.
