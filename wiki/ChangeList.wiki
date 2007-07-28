@@ -3,7 +3,7 @@
 
 = Change List =
 
-=== 1.1.2 (not yet released) ===
+=== 1.1.2 ===
   * Added patch by tj.rothwell to allow running !JsDoc Toolkit from any directory - issue #19.
   * Added library to do syntax hiliting, modified the `htm` template to create "view source code" links to hilited code - issue #20.
   * Fixed bug that affected constructor functions attached to a prototype, vs a method function attached to a prototype: in each case "this" means something different - issue #21.
