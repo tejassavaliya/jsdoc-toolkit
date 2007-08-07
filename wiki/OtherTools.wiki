@@ -1,0 +1,21 @@
+#summary Advice on integrating with other tools.
+
+= Running !JsDoc Toolkit from Eclipse =
+
+_contributed by simon.speich_
+
+You can run !JsDoc Toolkit from within Eclipse by setting up
+Run -> External Tools -> Open External Tools Dialog...
+
+Location
+C:\Program Files\Java\jre1.5.0_12\bin\java.exe
+
+Working Directory
+C:\DirectoryToWhereJsDocToolkitIsLocated\jsdoc_toolkit
+
+Arguments
+{{{
+-jar app/js.jar app/run.js -r=4 -t=templates/htm "-d=C:\PathToWhereDocIsSaved" "C:\PathToWebsiteToDocument"
+}}}
+
+For more information about arguments see CmdlineOptions
