@@ -5,7 +5,7 @@
 _contributed by simon.speich_
 
 You can run !JsDoc Toolkit from within Eclipse by setting up
-Run -> External Tools -> Open External Tools Dialog...
+Run → External Tools → Open External Tools Dialog...
 
 Location
 {{{
@@ -23,3 +23,5 @@ Arguments
 }}}
 
 For more information about arguments see CmdlineOptions
+
+
