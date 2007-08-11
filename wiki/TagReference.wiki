@@ -1,25 +1,35 @@
-#summary A reference page of tags used by Jsdoc Toolkit.
+#summary A list of tags used by Jsdoc Toolkit.
 
 == Summary of Tags For !JsDoc Toolkit ==
 
 || *tag title* || *syntax*                          || *description* ||
+|| class || `@class description`                    || used with a constructor to provide a description of the class separate from the constructor's description. used with an object literal to treat the object as a class. ||
 || constructor || `@constructor`                    || mark this function as a constructor. ||
-|| description || `@description`                    || a description of this (synonym desc). ||
+|| description || `@description`                    || a description of this (synonym `desc`). this is an alternative to including an untagged description before any tags. ||
 || exception   || `@exception {type} description`  || explain an error a function can throw (synonym `throws`).    ||
 || fileOverview  || `@fileOverview description`  || describe the entire file (synonym `projectdescription`).    ||
 || function  || `@function`  || force the object to be treated as a function.    ||
 || ignore      || `@ignore`        || never show this in the documentation. ||
 || inherits      || `@inherits objname`        || all the properties and methods of objname are also attached to this (synonym `extends`). ||
-|| memberOf  || `@memberOf objname`  || the function or object is a method or property of objname.    ||
-|| name  || `@name objname`  || use the given name, ignoring what is in the code.    ||
+|| memberOf  || `@memberOf objname`  || this function or object is a method or property of objname.    ||
+|| name  || `@name objname`  || use the given name to document the object, and ignore whatever is in the code that follows.    ||
 || param       || `@param {type} name description`    || explain a function parameter.                 ||
 || param       || `@param {type} [name] description`  || an optional parameter.                           ||
 || private     || `@private`       || will be excluded from the documentation without the `-p` option.      ||
-|| property       || `@property {type} name description`  || describe a property of this.                           ||
+|| property       || `@property {type} name description`  || describe a property of this object. used as an alternative to documenting the property object itself.                           ||
 || return      || `@return {type} description`        || explain a function return value.            ||
 || scope      || `@scope objname`        || the next object literal's properties/methods are attached to objname. ||
 || scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
+|| static      || `@static`        || used with a class to declare the class has no constructor. ||
 || type      || `@type whattype`        || the property is of type whattype. ||
+
+
+
+
+
+
+
+
 
 
 
