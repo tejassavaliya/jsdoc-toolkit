@@ -6,7 +6,7 @@
 || constructor || `@constructor`                    || mark this function as a constructor. ||
 || description || `@description`                    || a description of this (synonym desc). ||
 || exception   || `@exception {type} description`  || explain an error a function can throw (synonym `throws`).    ||
-|| fileOveview  || `@fileOverview description`  || describe the entire file (synonym `projectdescription`).    ||
+|| fileOverview  || `@fileOverview description`  || describe the entire file (synonym `projectdescription`).    ||
 || function  || `@function`  || force the object to be treated as a function.    ||
 || ignore      || `@ignore`        || never show this in the documentation. ||
 || inherits      || `@inherits objname`        || all the properties and methods of objname are also attached to this (synonym `extends`). ||
@@ -20,7 +20,6 @@
 || scope      || `@scope objname`        || the next object literal's properties/methods are attached to objname. ||
 || scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
 || type      || `@type whattype`        || the property is of type whattype. ||
-
 
 
 
