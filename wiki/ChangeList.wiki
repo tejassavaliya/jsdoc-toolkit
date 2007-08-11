@@ -3,6 +3,13 @@
 
 = Change List =
 
+=== 1.2 (not yet released)===
+  * Added sunny template.
+  * Added support for @class tag.
+  * Fixed bug that affected user-defined toString methods applied to a prototype - issue #27.
+  * Fixed bug that prevented view-source files from being generated when using full paths to source files - issue #26.
+  * Added line numbers to view-source output.
+
 === 1.1.2 ===
   * Added patch by tj.rothwell to allow running !JsDoc Toolkit from any directory - issue #19.
   * Added library to do syntax hiliting, modified the `htm` template to create "view source code" links to hilited code - issue #20.
@@ -12,7 +19,7 @@
 
 === 1.1.1 ===
   * Fixed bug that caused an uncaught exception when a symbol extends/inherits a missing parent symbol - issue #17.
-  * Added support for @static and @singleton tag, for use with the @class tag to prevent it being treated as a a constructor - issue #18.
+  * Added support for @static tag, for use with the @class tag to prevent it being treated as a a constructor - issue #18.
 
 === 1.1.0 ===
   * Fixed bug that appeared when using @scope tag on a prototype - issue #11.
