@@ -36,6 +36,22 @@ function recast(employeeId, newRole) {
 
 _Note:_ That the parameter `newRole` is surrounded by square-brackets to indicate it is optional.
 
+If a parameter is expected to have a certain named property, you can document that with the `@config` tag, so-called because it is useful for functions (and constructors) that are designed to receive a configuration object.
+
+{{{
+/**
+ * Modify the details of the employee.
+ * @param {object} employee The employee.
+ * @param {integer} newDetails
+ * @config {string} [title] The new job title.
+ * @config {number} [salary] The new salary.
+ */
+function modify(employee, newDetails) {
+    if (newDetails.title != undefined)  employee.title = newDetails.title;
+    if (newDetails.salary != undefined) employee.salary = newDetails.salary;
+}
+}}}
+
 = Nested Functions =
 
   * Use the `-a` option to cause all nested functions and their parameters appear in your output.
@@ -286,4 +302,7 @@ var Record = new function() {
     };
 }
 }}}
+
+
+
 
