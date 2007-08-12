@@ -3,12 +3,13 @@
 
 = Change List =
 
-=== 1.2 (not yet released)===
+=== 1.2.1 ===
   * Added sunny template for javadoc style output.
   * Added support for @class tag.
   * Fixed bug that affected user-defined toString methods applied to a prototype - issue #27.
   * Fixed bug that prevented view-source files from being generated when using full paths to source files - issue #26.
   * Added line numbers to view-source output.
+  * Added support for the @config tag, to document properties of parameters - issue #25.
 
 === 1.1.2 ===
   * Added patch by tj.rothwell to allow running !JsDoc Toolkit from any directory - issue #19.
