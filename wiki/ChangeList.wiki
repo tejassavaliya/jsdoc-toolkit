@@ -3,6 +3,10 @@
 
 = Change List =
 
+=== 1.2.2 (not yet released) ===
+  * Added -o option to redirect processing messages into a log file.
+  * Added support for multiple doclets describing the same constructor function in the sunny template (this was already supported in the htm template).
+
 === 1.2.1 ===
   * Added sunny template for javadoc style output.
   * Added support for @class tag.
