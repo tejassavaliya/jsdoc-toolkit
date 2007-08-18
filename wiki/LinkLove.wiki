@@ -2,9 +2,8 @@
 
 = Link Love =
 
-See who's using or talking about JsDoc.
+See who's using or talking about !JsDoc.
 
 == Open Kosmaczewski ==
 [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
-
 
