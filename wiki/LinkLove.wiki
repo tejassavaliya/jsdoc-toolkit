@@ -5,8 +5,12 @@
 
 See who's using or talking about !JsDoc.
 
+== Frozen Toolkit ==
+
+ * http://frozentoolkit.frozen-o.com/
+
 == Jash: !JavaScript Shell ==
-http://www.billyreisinger.com/jash/jsdoc/
+ * http://www.billyreisinger.com/jash/jsdoc/
 
 == Open Kosmaczewski ==
-[http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
+ * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
