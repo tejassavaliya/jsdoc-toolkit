@@ -9,10 +9,11 @@
 || description || `@description`                    || a description of this (synonym `desc`). this is an alternative to including an untagged description before any tags. ||
 || example|| `@example examplecode`                    || an example of how to use the function or object. ||
 || exception   || `@exception {type} description`  || explain an error a function can throw (synonym `throws`).    ||
+|| extends   || `@extends objname`  || all the properties and methods of the objname are attached to this (synonym `augments`).    ||
 || fileOverview  || `@fileOverview description`  || describe the entire file (synonym `projectdescription`).    ||
 || function  || `@function`  || force the object to be treated as a function.    ||
 || ignore      || `@ignore`        || never show this in the documentation. ||
-|| inherits      || `@inherits objname`        || the objname is a properties or method also attached to this. ||
+|| inherits      || `@inherits objname`        || the objname is a property or method attached to this. ||
 || memberOf  || `@memberOf objname`  || this function or object is a method or property of objname.    ||
 || name  || `@name objname`  || use the given name to document the object, and ignore whatever is in the code that follows.    ||
 || param       || `@param {type} name description`    || explain a function parameter.                 ||
@@ -24,4 +25,6 @@
 || scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
 || static      || `@static`        || used with a class to declare the class has no constructor. ||
 || type      || `@type whattype`        || the property is of type whattype. ||
+
+
 
