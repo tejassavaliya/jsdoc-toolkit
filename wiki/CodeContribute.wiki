@@ -1,4 +1,6 @@
 #summary Developers who have contributed code to JsDoc Toolkit.
 #labels Featured
 
- * tj.rothwell: Added patch to allow running !JsDoc Toolkit from arbitrary working directory -- issue #19.
+ * *peter.payerl*: Added a patch and template to allow inherited methods to be properly listed with overridden methods taken into account; and other patches still waiting to be applied.
+ * *tj.rothwell*: Added patch to allow running !JsDoc Toolkit from arbitrary working directory -- issue #19.
+
