@@ -8,6 +8,9 @@ See who's using or talking about !JsDoc.
 == dara-j ==
  * [http://dara-j.asablo.jp/blog/2007/06/27/1608733 Boy, I really wish I could read Japanese....]
 
+== Fader ==
+ * http://www.eternal.co.za/scripts/fader/index.html
+
 == Frozen Toolkit ==
  * http://frozentoolkit.frozen-o.com/
 
