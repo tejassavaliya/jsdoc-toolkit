@@ -3,8 +3,9 @@
 
 = Change List =
 
-=== 1.3.0 (not yet released) ===
+=== 1.3.0 ===
   * Added !JsDoc version number to templates.
+  * Upgraded xml template to work with new filegroup object.
 
 === 1.3b ===
   * Improved @extends to work across file boundaries, and to support multiple levels of inheritance.
