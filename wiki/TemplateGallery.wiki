@@ -1,0 +1,35 @@
+#summary Templates, templates, templates.
+
+This is a gallery of templates available for use with !JsDoc Toolkit.
+
+
+= htm Template =
+
+Simple, easy to understand format.
+
+  * Included in the regular distribution.
+
+= Sunny Template =
+
+If you wish your documentation to be most like !JavaDoc, this template is meant for you.
+
+  * Included in the regular distribution.
+
+= Mad Template =
+
+Colorful and shiny. This is a very attractive and fun addition to the template collection.
+
+  * Created by inamorix.
+  * Available at http://lib.metatype.jp/madtemplate/
+
+= Spicey Template =
+
+Super usable and easy to understand. Has many enhancements like collapsable tree-style menus.
+
+Created by Vince Spicer.
+  * Demo at http://vinces.ca/jsdocs/
+  * Download from http://vinces.ca/jsdocs/spicey.tgz
+ 
+ 
+ 
+ 
