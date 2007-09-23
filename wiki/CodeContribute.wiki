@@ -1,9 +1,12 @@
 #summary Developers who have contributed code to JsDoc Toolkit.
 #labels Featured
 
+  * *vinces1979* Patches to allow for global variables to be defined with the -D option, and code to check the existence of files such as the template directoy -- issue #24 and issue #43.
   * *bfattori*: Improvements to the Sunny template, and code to handle functions defined within functions -- issue #34 and issue #38.
   * *tj.rothwell*: Added patch to fixed bug that appeared when multiple configs followed a param -- issue #28.
  * *peter.payerl*: Added a patch and template to allow inherited methods to be properly listed with overridden methods taken into account; and other patches still waiting to be applied.
  * *tj.rothwell*: Added patch to allow running !JsDoc Toolkit from arbitrary working directory -- issue #19.
+ 
+ 
  
  
