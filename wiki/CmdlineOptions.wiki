@@ -16,6 +16,20 @@ _Note:_ This overview assumes you've changed your current working directory to t
 || Mac OS X || $ cd /where/ever/jsdoc-toolkit ||
 || Linux || % cd /where/ever/jsdoc-toolkit ||
 
+== Summary ==
+
+|| -c=<PATH> || Use the JSON style configuration file as command line options. ||
+|| -r=<DEPTH> || Descend into src directories. ||
+|| -t=<PATH> || Required. Use this template to format the output. ||
+|| -d=<DEPTH> || Output to this directory (defaults to js_docs_out). ||
+|| -a || Include all functions, even undocumented ones. ||
+|| -A || Include all functions, even undocumented, underscored ones. ||
+|| -p || Include symbols tagged as private. ||
+|| -x=<EXT>[,EXT] || Scan source files with the given extension/s (defaults to js). ||
+|| -o=<PATH> || Print log messages to a file (defaults to stdout). ||
+|| -h || Show this message and exit. ||
+||
+
 == Basic ==
 
 !JsDoc Toolkit runs via the Mozilla !JavaScript Engine, included with the !JsDoc Toolkit distribution. So all commands start with this...
