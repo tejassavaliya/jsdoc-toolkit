@@ -4,6 +4,8 @@
 = Change List =
 
 === 1.3.1 (not yet released) ===
+  * Changed "htm" template to use the ".html" file extension and renamed to "Sweet."
+  * Added -c option to allow for configuration file to be included, added sample configuration file -- issue #30.
   * Removed "No overview provided" message -- issue #31.
   * Added support for methods defined within constructors, (patch submitted by bfattori) -- issue #34.
   * Changed sunny template so only first sentence of descriptions are shown in summary section (patch submitted by bfattori) -- issue #38.
