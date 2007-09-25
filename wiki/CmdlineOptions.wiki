@@ -117,3 +117,13 @@ It is a convention that if you name a function with an underscore as the first c
 {{{
 java -jar app/js.jar app/run.js -t=templates/htm -A /myscripts/
 }}}
+
+== Using a Configuration File ==
+
+If you find yourself entering the same command line switches over and over again, you can save these to a JSON file and include that file with the `-c` option.
+
+{{{
+java -jar app/js.jar app/run.js -c=sample.conf /myscripts/
+}}}
+
+_Note:_ There really is a "sample.conf" file included in the standard !JsDoc Toolkit distribution, which should help to get you started writing your own.
