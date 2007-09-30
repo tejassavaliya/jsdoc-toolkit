@@ -3,7 +3,8 @@
 
 = Change List =
 
-=== 1.3.1 (not yet released) ===
+=== 1.3.1 ===
+  * Changed so that in cases where a doclet has no description the first class description found will be used instead. This will allow doclets written for Sunny to work equally for Sweet.
   * Changed "htm" template to use the ".html" file extension and renamed to "Sweet."
   * Added -c option to allow for configuration file to be included, added sample configuration file -- issue #30.
   * Removed "No overview provided" message -- issue #31.
