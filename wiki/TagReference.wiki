@@ -8,6 +8,7 @@
 || config || `@config {type} propertyname description`   || used to document a required property of a parameter. if it follows a parameter then it is assumed to apply to that parameter. ||
 || constructor || `@constructor`                    || mark this function as a constructor. ||
 || description || `@description`                    || a description of this (synonym `desc`). this is an alternative to including an untagged description before any tags. ||
+|| event|| `@event` || mark this method as an event on the containing class. ||
 || example|| `@example examplecode`                    || an example of how to use the function or object. ||
 || exception   || `@exception {type} description`  || explain an error a function can throw (synonym `throws`).    ||
 || fileOverview  || `@fileOverview description`  || describe the entire file.    ||
@@ -25,6 +26,4 @@
 || scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
 || static      || `@static`        || used with a class to declare the class has no constructor. ||
 || type      || `@type whattype`        || the property is of type whattype. ||
-
-
 
