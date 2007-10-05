@@ -14,8 +14,14 @@ See who's using or talking about !JsDoc.
 == Jash: !JavaScript Shell ==
  * http://www.billyreisinger.com/jash/jsdoc/
 
+== Maven JSTools Plugin ==
+ * http://dev.abiss.gr/mvn-jstools/
+
 == Open Kosmaczewski ==
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
+
+== Sarissa==
+ * http://dev.abiss.gr/sarissa
 
 == !TimePlot ==
  * http://simile.mit.edu/timeplot/
