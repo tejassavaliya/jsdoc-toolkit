@@ -281,7 +281,7 @@ function getRecord(){
   * The `@scope` tag _must_ immediately precede the opening of an object literal. Within that object definition all properties will be the applied to the given containing scope.
 
 {{{
-framework.createClass(
+framework.addTo(
     "FileWatcher.Widget",
     /** @scope FileWatcher.Widget */
     {
@@ -292,8 +292,28 @@ framework.createClass(
 );
 }}}
 
-  * In the above example the parser will find a function named: `FileWatcher.Widget.initialize`.
-  * Another example of using this technique...
+  * In the above example the parser will find a function named: `FileWatcher.Widget.initialize`. Note that this presumes you've already documented the parent object `FileWatcher.Widget` elsewhere.
+  * You can also use the scope of an object's prototype.
+
+{{{
+Builder.make(
+    "Sorter",
+    /** @scope Sorter.prototype */
+    {
+        /** Register a sorting function. */
+        register: function(f) {
+        }
+    }
+);
+
+// will be treated by JsDoc Toolkit as if you'd written...
+function Sorter() {
+    this.register = function(f) {
+    }
+}
+}}}
+
+  * A different example of using this technique...
 
 {{{
 var Record = new function() {
@@ -302,7 +322,5 @@ var Record = new function() {
     };
 }
 }}}
-
-
 
 
