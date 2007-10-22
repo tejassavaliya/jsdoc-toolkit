@@ -3,6 +3,11 @@
 
 = Change List =
 
+
+=== 1.3.4 (not yet released) ===
+  * Modified @constructor description so that it is now possible to leave it empty even while you have a @class description (before an empty @constructor description was set to the @class description resulting in the appearance of a double description when you wanted the former to be empty), issue #54.
+  * Added the @since tag to sweet.
+
 === 1.3.3 ===
   * Fixed bug that prevented object summaries in the Sunny template from being limited to the first sentence -- issue #47, issue #51.
 
