@@ -3,8 +3,8 @@
 
 = Change List =
 
-
 === 1.3.4 (not yet released) ===
+  * Fixed bug that prevented inline functions that are evaluated and assigned to properties from being recognized as objects, not functions.
   * Modified @constructor description so that it is now possible to leave it empty even while you have a @class description (before an empty @constructor description was set to the @class description resulting in the appearance of a double description when you wanted the former to be empty) -- issue #54.
   * Added the @since tag to sweet (patch submitted by herzaso) -- issue #49.
   * Fixed bug that appeared when using sunny with classes that have more than one member sharing the same name (solution submitted by peter.payerl) .
