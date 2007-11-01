@@ -20,11 +20,11 @@ _Note:_ This overview assumes you've changed your current working directory to t
 
 || -c=<PATH> || Use the JSON style configuration file as command line options. ||
 || -r=<DEPTH> || Descend into src directories. ||
-|| -t=<PATH> || Required. Use this template to format the output. ||
+|| -t=<PATH> || *Required.* Use this template to format the output. ||
 || -d=<DEPTH> || Output to this directory (defaults to js_docs_out). ||
 || -a || Include all functions, even undocumented ones. ||
 || -A || Include all functions, even undocumented, underscored ones. ||
-|| -p || Include symbols tagged as private. ||
+|| -p || Include symbols tagged as private in the output. ||
 || -x=<EXT>[,EXT] || Scan source files with the given extension/s (defaults to js). ||
 || -o=<PATH> || Print log messages to a file (defaults to stdout). ||
 || -h || Show this message and exit. ||
@@ -88,20 +88,20 @@ _Note:_ The extensions are compared in a _case insensitive_ manner, so the follo
 
 == Using a Template ==
 
-You can use a template to format the generated documentation. Use the `-t` option to specify which template you wish to use.
+To produce output files you must use a template to format the generated documentation. Use the `-t` option to specify which template you wish to use.
 
 {{{
-java -jar app/js.jar app/run.js -t=templates/htm /myscripts/
+java -jar app/js.jar app/run.js -t=templates/sweet /myscripts/
 }}}
 
-_Note:_ You must specify a *directory* as the value to `-t`, not a file. That directory must contain a file named "publish.js".
+_Note:_ You must specify a *directory* as the value to `-t`, not a file. And that directory must contain a file named "publish.js".
 
 == Output Directories ==
 
 If you are using an output template, by default the formatted output files will be created in a folder named "js_docs_out". If you wish to change this behavior with the `-d` option.
 
 {{{
-java -jar app/js.jar app/run.js -t=templates/htm -d=my_docs /myscripts/
+java -jar app/js.jar app/run.js -t=templates/sweet -d=my_docs /myscripts/
 }}}
 
 == Documenting All Functions ==
@@ -109,13 +109,13 @@ java -jar app/js.jar app/run.js -t=templates/htm -d=my_docs /myscripts/
 By default, only functions that you've written documentation comments for will appear in the output. If you want !JsDoc Toolkit to generate documentation for _all_ functions, even the uncommented ones, in your source code use the `-a` option.
 
 {{{
-java -jar app/js.jar app/run.js -t=templates/htm -a /myscripts/
+java -jar app/js.jar app/run.js -t=templates/sweet -a /myscripts/
 }}}
 
 It is a convention that if you name a function with an underscore as the first character, you intend it to be for internal use only, not part of the public API. If you wish all functions, even those that are uncommented and start with an underscore to be included in the output, use the `-A` option.
 
 {{{
-java -jar app/js.jar app/run.js -t=templates/htm -A /myscripts/
+java -jar app/js.jar app/run.js -t=templates/sweet -A /myscripts/
 }}}
 
 == Using a Configuration File ==
