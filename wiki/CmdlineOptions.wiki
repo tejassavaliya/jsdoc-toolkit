@@ -22,7 +22,7 @@ _Note:_ This overview assumes you've changed your current working directory to t
 || -r=<DEPTH> || Descend into src directories. ||
 || -t=<PATH> || *Required.* Use this template to format the output. ||
 || -d=<DEPTH> || Output to this directory (defaults to js_docs_out). ||
-|| -e=<ENCODING|| Use this encoding to read and write files. ||
+|| -e=<ENCODING> || Use this encoding to read and write files. ||
 || -a || Include all functions, even undocumented ones. ||
 || -A || Include all functions, even undocumented, underscored ones. ||
 || -p || Include symbols tagged as private in the output. ||
