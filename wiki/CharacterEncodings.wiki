@@ -18,10 +18,10 @@ That is all well and good, except for one thing: the HTML templates (both Sunny 
 
 But if you started with GBK encoded files, your output will still be in GBK, which is not a complete subset of UTF-8, and so your browser will be getting false information and displaying a lot of garbage.
 
-However that charset meta information can be changed from the command line. By using the -D option, listed on the CmdlineOptions page, you can tell !JsDoc to write any arbitrary value you like into that meta tag, like so:
+However that charset meta information can be changed from the command line. By using the -e or -encoding option, listed on the CmdlineOptions page, you can tell !JsDoc to write any arbitrary value you like into that meta tag, like so:
 
 {{{
--D="charset:GBK"
+-e=GBK
 }}}
 
 Now all your HTML files will have the following meta tag inserted into their heads:
