@@ -21,7 +21,7 @@ _Note:_ This overview assumes you've changed your current working directory to t
 || -c=<PATH> || Use the JSON style configuration file as command line options. ||
 || -r=<DEPTH> || Descend into src directories. ||
 || -t=<PATH> || *Required.* Use this template to format the output. ||
-|| -d=<DEPTH> || Output to this directory (defaults to js_docs_out). ||
+|| -d=<PATH> || Output to this directory (defaults to js_docs_out). ||
 || -e=<ENCODING> || Use this encoding to read and write files. ||
 || -a || Include all functions, even undocumented ones. ||
 || -A || Include all functions, even undocumented, underscored ones. ||
