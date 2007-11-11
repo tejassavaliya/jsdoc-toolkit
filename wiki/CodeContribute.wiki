@@ -1,6 +1,7 @@
 #summary Developers who have contributed code to JsDoc Toolkit.
 #labels Featured
 
+  * *Xu Huisheng* Added support to JsIO for reading and writing files in arbitrary encodings.
   * *herzaso* Added support for @version and @since -- issue #49 and added support for optional @config tag -- issue #48.
   * * dandfra* Patches to support for the @event tag, including modifications to the Sunny template --  issue #23 .
   * *vinces1979* Patches to allow for global variables to be defined with the -D option, and code to check the existence of files such as the template directoy -- issue #24 and issue #43.
