@@ -30,6 +30,7 @@ _Note:_ This overview assumes you've changed your current working directory to t
 || -o=<PATH> || Print log messages to a file (defaults to stdout). ||
 || -h || Show this message and exit. ||
 || -D="myVar:My value" || Multiple. Define a variable, available as !JsDoc.opt.D.myVar ||
+|| -v || Show informational messages during processing. ||
 
 == Basic ==
 
