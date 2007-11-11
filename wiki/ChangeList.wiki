@@ -3,7 +3,7 @@
 
 = Change List =
 
-=== 1.3.4 (not yet released) ===
+=== 1.4.0 (not yet released) ===
   * Added "namespace" section to sweet template, to represent static classes.
   * Fixed bug that prevented inline functions that are evaluated and assigned to properties from being recognized as objects, not functions.
   * Modified @constructor description so that it is now possible to leave it empty even while you have a @class description (before an empty @constructor description was set to the @class description resulting in the appearance of a double description when you wanted the former to be empty) -- issue #54.
