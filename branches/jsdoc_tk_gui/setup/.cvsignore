@@ -1,0 +1,12 @@
+JRE
+workingDirectory
+log
+output
+Emukilook.exe
+Emukilook-DVP.exe
+Emukilook-Lite.exe
+Emukilook-Lite-DVP.exe
+jdic.dll
+tray.dll
+WinMsiWrapper.dll
+.cvsignore
