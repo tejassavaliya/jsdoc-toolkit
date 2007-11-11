@@ -10,6 +10,7 @@
   * Added the @since tag to sweet (patch submitted by herzaso) -- issue #49.
   * Fixed bug that appeared when using sunny with classes that have more than one member sharing the same name (solution submitted by peter.payerl) .
   * Added support for "meta doclets" that can affect other doclets, specifically a "shared doclet" implementation -- issue #58.
+  * Added better support for displaying non UTF-8 character sets in templates -- issue #59.
 
 === 1.3.3 ===
   * Fixed bug that prevented object summaries in the Sunny template from being limited to the first sentence -- issue #47, issue #51.
