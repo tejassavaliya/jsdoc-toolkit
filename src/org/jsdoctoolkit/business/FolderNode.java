@@ -8,8 +8,6 @@ import java.util.Vector;
 
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import org.jdom.Document;
-import org.jdom.input.SAXBuilder;
 
 public class FolderNode extends DefaultMutableTreeNode {
 
@@ -44,8 +42,6 @@ public class FolderNode extends DefaultMutableTreeNode {
     public final static String PDF_EXTENSION = ".pdf";
 
     private int type;
-
-    private Vector<Document> components = new Vector<Document>();
 
     public FolderNode(File userObject) {
         super(userObject);
@@ -368,7 +364,7 @@ public class FolderNode extends DefaultMutableTreeNode {
         return FolderNode.TYPE_GROUP;
     }
 
-    public Document load(File f) {
+    /*public Document load(File f) {
         SAXBuilder sxb = new SAXBuilder();
         Document doc = null;
         if (f.isFile() && f.getName().indexOf(ECC_EXTENSION) != -1) {
@@ -396,7 +392,7 @@ public class FolderNode extends DefaultMutableTreeNode {
                 getComponents().add(load(files[i]));
             }
         }
-    }
+    }*/
 
     /**
      * @return Returns the components.
@@ -410,15 +406,6 @@ public class FolderNode extends DefaultMutableTreeNode {
 
         return v;
     }
-
-   /* public ESXMLDoc getESXmlDoc() {
-        if (isECCFile()) {
-            loadOne();
-            ESXMLDoc xml = new ESXMLDoc(this.getComponents().elementAt(0));
-            return xml;
-        }
-        return null;
-    }*/
 
     /**
      * @return Returns the components.
@@ -434,17 +421,4 @@ public class FolderNode extends DefaultMutableTreeNode {
         return v;
     }
 
-    /**
-     * @return Returns the components.
-     */
-    public Vector<Document> getComponents() {
-        return this.components;
-    }
-
-    /**
-     * @param components The components to set.
-     */
-    public void setComponents(Vector<Document> components) {
-        this.components = components;
-    }
 }

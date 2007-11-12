@@ -13,12 +13,6 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.tree.DefaultTreeModel;
 
-import org.jdom.Document;
-import org.jdom.Element;
-import org.jdom.JDOMException;
-import org.jdom.input.SAXBuilder;
-import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
 import org.jsdoctoolkit.business.JsDocParameter;
 import org.jsdoctoolkit.business.FolderNode;
 
@@ -42,7 +36,6 @@ public class MainModel extends AbstractModel{
 
     private static Hashtable<String, String> parameters;
 
-    private static Document cfgDoc;
 
     public static String ON = "on";
 
@@ -52,77 +45,6 @@ public class MainModel extends AbstractModel{
 
     public MainModel() {
     	jsDocParameter = new JsDocParameter();
-        try {
-            initParameters("conf/config.xml");
-        } catch (JDOMException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * cette méthode parcours le fichier XML contenant les parametres chacun des parametres est
-     * sauvegardé dans une hashmap (nom du param, valeur)
-     * 
-     * @return HashMap contenant tous les parametres
-     * @throws IOException
-     * @throws JDOMException
-     * 
-     */
-    public static void initParameters(String fichierProperties) throws JDOMException, IOException {
-        long debut = System.currentTimeMillis();
-
-        parameters = new Hashtable<String, String>();
-
-        SAXBuilder sxb = new SAXBuilder();
-        cfgDoc = sxb.build(new File(fichierProperties));
-        Element root = cfgDoc.getRootElement();
-
-        Iterator it = root.getChildren("param").iterator();
-        while (it.hasNext()) {
-            Element p = (Element) it.next();
-            parameters.put(p.getAttributeValue("name"), p.getAttributeValue("value"));
-        }
-        long total = System.currentTimeMillis() - debut;
-        MyLogger.getLogger().fine("Chargement du fichier XML de config : " + total + " ms");
-    }
-
-    public static String getParameter(String name) {
-        return parameters.get(name);
-    }
-
-    public static boolean getBooleanParameter(String name) {
-        return parameters.get(name).equals(ON);
-    }
-
-    public static void setBooleanParameter(String name, boolean value) {
-        setParameter(name, (value) ? ON : OFF);
-    }
-
-    public static void setParameter(String name, String value) {
-        parameters.remove(name);
-        parameters.put(name, value);
-        Iterator it = cfgDoc.getRootElement().getChildren("param").iterator();
-        while (it.hasNext()) {
-            Element p = (Element) it.next();
-            if (p.getAttributeValue("name").equals(name)) {
-                p.setAttribute("value", value);
-                break;
-            }
-        }
-        saveConfig();
-    }
-
-    public static void saveConfig() {
-        XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
-        try {
-            sortie.output(cfgDoc, new FileOutputStream("conf/config.xml"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
