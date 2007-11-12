@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Emukilook" default="usage" >
+	<description> Ant du projet Emukilook </description>
+	
+	<!-- Chargement des variables externes-->
+	<property file="build.properties"/>
+	
+	<!-- Usage -->
+	<target name="usage">
+		<echo message=""/>
+		<echo message="-------------------------------------------------------------"/>
+		<echo message=""/>
+		<echo message=" Cibles disponibles:"/>
+		<echo message=""/>
+		<echo message="	ALL-IN-ONE	-> Génére les 2 Setup (Lite et normal)"/>
+		<echo message="	CLEAN		-> Efface les répertoires"/>
+		<echo message="	COMPILE		-> Compile le code Source"/> 
+		<echo message="	EXE			-> Compile le code Source"/> 
+		<echo message="	INIT		-> Initialise les répertoires"/> 
+		<echo message="	JAR			-> Construit les 2 jars (EK.jar et EK-SRC.jar)"/> 
+		<echo message="	OBFUSCATE	-> Optimize le jar EK.jar en EK_o.jar"/> 
+		<echo message="	JAVADOC		-> Fabrique la javadoc"/> 
+		<echo message="	NSIS		-> Fabrique les 2 Setup (Lite et normal)"/>
+		<echo message=""/>
+		<echo message="-------------------------------------------------------------"/>
+		<echo message=""/>
+	</target>
+	
+	<!-- Tache qui fait la Totale -->
+	 <target name="ALL-IN-ONE" depends="JAR, TAR, ZIP" description="Generation complete">
+	      <echo message="Generation complete." />
+	 </target>
+	
+		
+	<!-- Nettoyage -->
+	<target name="CLEAN" description="Clean up">
+		<echo message="Suppression des répertoires de compilation ..."/>
+		<delete dir="${build.dir}" />
+		<delete dir="${bin.dir}" />
+		<delete dir="${doc.dir}" />
+		<!--<delete dir="${tmp.dir}" />-->
+		<!--<delete dir="${log.dir}" />-->
+		<echo message="=>OK"/>
+	</target>
+			
+	<!-- Initialisation des répertoires -->
+	<target name="INIT" depends="CLEAN">
+		<echo message="Initialisation des répertoires de compilation ..."/>
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${bin.dir}" />
+		<!--<mkdir dir="${tmp.dir}" />-->
+		<!--<mkdir dir="${log.dir}" />-->
+		<echo message="=>OK"/>		
+	</target>
+	
+	<!-- Compilation -->
+	<target name="COMPILE" depends="INIT" description="Compile the source ">
+		<echo message="Compilation des sources ..."/>	
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" debug="on">	
+			<include name="**/*.java"/>
+			<classpath>
+			   <fileset dir="${lib.dir}">
+			   		<include name="*.jar"/>
+			   </fileset>
+			 </classpath>      
+		</javac>
+		<copy todir="${bin.dir}/${imgjar.dir}">
+			<fileset dir="${src.dir}/${img.dir}"/>
+		</copy>
+		<echo message="=>OK"/>
+	</target>
+	
+	<!-- Creation du JAR-->
+	
+	<target name="JAR" depends="COMPILE" description="Construction des jars">
+		<echo message="Construction des jars ..."/>
+		<!--<mkdir dir="${dist.dir}/lib" />-->
+		<delete file="${lib.dir}/${jarO.name}.jar" />
+		<delete file="${lib.dir}/${jar.name}.jar" /><!-- lib -->
+		<jar jarfile="${lib.dir}/${jar.name}.jar" manifest="MANIFEST.MF" basedir="${bin.dir}" />
+		<delete file="${lib.dir}/${src.name}.jar" /><!-- lib -->
+		<jar jarfile="${lib.dir}/${src.name}.jar" manifest="MANIFEST.MF" basedir="${src.dir}" />
+		<echo message="=>OK - Construction des jars"/>
+	</target>
+	
+	<!-- LINUX TAR -->	
+		
+	<target name="TAR" description="Génération des Tar pour Linux">
+		<echo message="Génération des Tar pour Linux"/>
+		
+		<!-- LINUX TAR Lite  basedir="../setup" excludes="jre1.6.0/**" -->
+		<delete file="../build/JsDocToolkit.tar.bz2" />
+		<tar longfile="gnu" destfile="../build/JsDocToolkit.tar.bz2" compression="bzip2">
+			
+			<tarfileset dir="../setup/" >
+				<include name="conf/**" />
+				<include name="lang/**" />
+				<include name="lib/*.jar" />
+				<include name="log/**" />
+				<include name="output/**" />
+				<include name="template/**" />
+				<include name="workingDirectory/**" />
+			</tarfileset>			
+		</tar>	
+					
+		<echo message="=>OK"/>
+	</target >
+	
+	<target name="ZIP" description="Génération des Zip">
+		<echo message="Génération des Zip"/>
+		
+		<!-- Win Zip Lite  basedir="../setup" excludes="jre1.6.0/**" -->
+		<delete file="../build/JsDocToolkit.zip" />
+		<zip longfile="gnu" destfile="../build/JsDocToolkit.zip" compression="bzip2">
+			
+			<zipfileset dir="../setup/" >
+				<include name="conf/**" />
+				<include name="lang/**" />
+				<include name="lib/*.jar" />
+				<include name="log/**" />
+				<include name="output/**" />
+				<include name="template/**" />
+				<include name="workingDirectory/**" />
+			</zipfileset>			
+		</zip>	
+			
+		<echo message="=>OK"/>
+	</target >
+	
+	<!-- JAVADOC -->
+	<target name="JAVADOC" depends="COMPILE" description="Generation de la documentation">
+		<echo message="Generation de la documentation ..."/>
+		<delete dir="${doc.dir}/" />
+	    <mkdir dir="${doc.dir}/" />
+		
+	    <javadoc sourcepath="${src.dir}" packagenames="ek." destdir="${doc.dir}" author="true" version="true" use="true" package="true">
+	    	
+	    </javadoc>
+		
+		<echo message="=>OK"/>
+	</target>	
+
+</project>
