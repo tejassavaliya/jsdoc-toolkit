@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Emukilook" default="usage" >
-	<description> Ant du projet Emukilook </description>
+<project name="JsDocToolkit" default="usage" >
+	<description>JsDoc Toolkit Ant File</description>
 	
 	<!-- Chargement des variables externes-->
 	<property file="build.properties"/>
@@ -10,17 +10,15 @@
 		<echo message=""/>
 		<echo message="-------------------------------------------------------------"/>
 		<echo message=""/>
-		<echo message=" Cibles disponibles:"/>
+		<echo message=" Available target:"/>
 		<echo message=""/>
 		<echo message="	ALL-IN-ONE	-> Génére les 2 Setup (Lite et normal)"/>
 		<echo message="	CLEAN		-> Efface les répertoires"/>
 		<echo message="	COMPILE		-> Compile le code Source"/> 
 		<echo message="	EXE			-> Compile le code Source"/> 
 		<echo message="	INIT		-> Initialise les répertoires"/> 
-		<echo message="	JAR			-> Construit les 2 jars (EK.jar et EK-SRC.jar)"/> 
-		<echo message="	OBFUSCATE	-> Optimize le jar EK.jar en EK_o.jar"/> 
+		<echo message="	JAR			-> Construit les 2 jars (.jar et -SRC.jar)"/> 
 		<echo message="	JAVADOC		-> Fabrique la javadoc"/> 
-		<echo message="	NSIS		-> Fabrique les 2 Setup (Lite et normal)"/>
 		<echo message=""/>
 		<echo message="-------------------------------------------------------------"/>
 		<echo message=""/>
