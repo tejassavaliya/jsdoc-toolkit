@@ -16,7 +16,7 @@
   * Added print out of the number of warnings as the last line of output to stdout, if more than zero -- issue #50.
   * Added -v option to indicate verbose output (includes inform message), which defaults to false (only warnings).
   * Added @namespace as synonym for @static @class -- issue #56.
-  * Added ability to have the @param {type} come after the @param name -- issue #61.
+  * Added ability to have the @param {type} come after the @param name (patch submitted by  bfattori)-- issue #61.
 
 === 1.3.3 ===
   * Fixed bug that prevented object summaries in the Sunny template from being limited to the first sentence -- issue #47, issue #51.
