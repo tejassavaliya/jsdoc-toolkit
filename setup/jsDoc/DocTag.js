@@ -2,8 +2,8 @@
  * @fileOverview
  * @name DocTag
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/DocTag.js $
- * @revision $Id: DocTag.js 213 2007-08-22 10:21:50Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/DocTag.js $
+ * @revision $Id: DocTag.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */
@@ -78,10 +78,11 @@ function DocTag(src) {
 				}
 			}
 			else if (this.title == "config") {
-				m = this.desc.match(/^\s*([a-zA-Z0-9.$_]+)(?:\s+([\S\s]*\S))?/);
+				m = this.desc.match(/^\s*(\[?)([a-zA-Z0-9.$_]+)(\]?)(?:\s+([\S\s]*\S))?/);
 				if (m) {
-					this.name = (m[1] || "");
-					this.desc = (m[2] || "");
+					this.isOptional = (!!m[1] && !!m[3]); // bracketed name means optional
+					this.name = (m[2] || "");
+					this.desc = (m[4] || "");
 				}
 			}
 		}

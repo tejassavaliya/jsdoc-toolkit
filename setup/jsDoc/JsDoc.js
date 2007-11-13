@@ -2,13 +2,13 @@
  * @fileOverview
  * @name JsDoc Toolkit
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/JsDoc.js $
- * @revision $Id: JsDoc.js 276 2007-10-16 23:32:57Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/JsDoc.js $
+ * @revision $Id: JsDoc.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */
 
-/** @class Handle reporting messages to the user
+/** @class Handle reporting messages to the user.
 	@static
 */
 LOG = {
@@ -33,7 +33,8 @@ LOG = {
 	@author Michael Mathews <a href="mailto:micmath@gmail.com">micmath@gmail.com</a>
 */
 JsDoc = {
-	VERSION: "1.3.3",
+	/** The version number of this release. */
+	VERSION: "1.3.4",
 	
 	/**
 	 * Print out the expected usage syntax for this script on the command

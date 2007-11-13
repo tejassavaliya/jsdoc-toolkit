@@ -2,8 +2,8 @@
  * @fileOverview
  * @name Symbol
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/Symbol.js $
- * @revision $Id: Symbol.js 260 2007-10-03 22:18:38Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/Symbol.js $
+ * @revision $Id: Symbol.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */
@@ -29,6 +29,8 @@ function Symbol(name, params, isa, comment) {
 	this.desc = "";
 	this.classDesc = "";
 	this.memberof = "";
+	this.since = "";
+	this.version = "";
 	this.augments = [];
 	this.inherits = [];
 	this.properties = [];
@@ -36,7 +38,7 @@ function Symbol(name, params, isa, comment) {
 	this.file = {};
 	this.returns = [];
 	this.exceptions = [];
-    this.events= [];
+    this.events = [];
 	this.doc = new Doclet(comment);
 	
 	// move certain data out of the tags and into the Symbol
@@ -55,6 +57,16 @@ function Symbol(name, params, isa, comment) {
 		this.doc._dropTag("overview");
 	}
 	else {
+		var since;
+		if ((since = this.doc.getTag("since")) && since.length) {
+			this.since = since[0].desc;
+		}
+		
+		var version;
+		if ((version = this.doc.getTag("version")) && version.length) {
+			this.version = version[0].desc;
+		}
+		
 		var descs;
 		if ((descs = this.doc.getTag("desc")) && descs.length) {
 			this.desc = descs[0].desc;
@@ -152,8 +164,7 @@ function Symbol(name, params, isa, comment) {
 			this.isa = "CONSTRUCTOR"; // a class tag implies a conctuctor doclet
 			
 			this.classDesc += "\n"+classes[0].desc; // multiple class tags are concatenated
-			if (this.desc == "") this.desc = this.classDesc; // the first class description will be used when there is no constructor description
-			this.doc._dropTag("class");
+			//this.doc._dropTag("class");
 		}
 		
 		var inherits;
