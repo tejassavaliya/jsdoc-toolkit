@@ -2,8 +2,8 @@
  * @fileOverview
  * @name DocFile
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/DocFile.js $
- * @revision $Id: DocFile.js 260 2007-10-03 22:18:38Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/DocFile.js $
+ * @revision $Id: DocFile.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */

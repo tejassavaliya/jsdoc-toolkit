@@ -2,8 +2,8 @@
  * @fileOverview
  * @name Util
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/Util.js $
- * @revision $Id: Util.js 244 2007-09-23 09:42:21Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/Util.js $
+ * @revision $Id: Util.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */

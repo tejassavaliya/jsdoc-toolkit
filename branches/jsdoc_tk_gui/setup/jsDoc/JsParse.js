@@ -2,8 +2,8 @@
  * @fileOverview
  * @name JsParse
  * @author Michael Mathews micmath@gmail.com
- * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/tags/jsdoc_toolkit-1.3.3/app/JsParse.js $
- * @revision $Id: JsParse.js 236 2007-09-17 23:10:39Z micmath $
+ * @url $HeadURL: https://jsdoc-toolkit.googlecode.com/svn/branches/jsdoc_tk_gui/setup/app/JsParse.js $
+ * @revision $Id: JsParse.js 313 2007-11-11 22:01:03Z sebastien.bordes $
  * @license <a href="http://en.wikipedia.org/wiki/MIT_License">X11/MIT License</a>
  *          (See the accompanying README file for full details.)
  */
@@ -246,7 +246,23 @@ JsParse.prototype._onObLiteral = function(nspace, ts) {
 				}
 				
 				var body = ts.balance("LEFT_CURLY");
-
+				
+				// like foo: function(n) {return n}(42)
+				if (ts.look(1).is("LEFT_PAREN")) {
+					isa = SYM.OBJECT;
+					
+					ts.balance("LEFT_PAREN");
+					//if (doc) { // we only keep these if they're documented
+						//name = name.replace(/\.prototype\.?/, "/");
+							
+						//if (!/\/$/.test(name)) { // assigning to prototype of already existing symbol
+						//	this.symbols.push(new Symbol(name, [], isa, doc));
+						//}
+					//}
+					//this._onFnBody(name, new TokenStream(body));
+					//return true;
+				}
+			
 				this.symbols.push(new Symbol(name, params, isa, doc));
 				
 				// find methods in the body of this function
