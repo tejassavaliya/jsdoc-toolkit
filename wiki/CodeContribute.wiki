@@ -1,6 +1,7 @@
 #summary Developers who have contributed code to JsDoc Toolkit.
 #labels Featured
 
+  * * bfattori* Patch to allow the type of a @param tag come after the name -- issue #61.
   * *Xu Huisheng* Added support to JsIO for reading and writing files in arbitrary character encodings.
   * *herzaso* Added support for @version and @since -- issue #49 and added support for optional @config tag -- issue #48.
   * * dandfra* Patches to support for the @event tag, including modifications to the Sunny template --  issue #23 .
