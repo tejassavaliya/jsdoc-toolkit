@@ -17,6 +17,7 @@
 || inherits      || `@inherits objname`        || that objname is a property or method attached to this. ||
 || memberOf  || `@memberOf objname`  || this function or object is a method or property of objname.    ||
 || name  || `@name objname`  || use the given name to document the object, and ignore whatever is in the code that follows.    ||
+|| namespace  || `@namespace description`  || synonym for `@static` and `@class description`.    ||
 || param       || `@param {type} name description`    || explain a function parameter.                 ||
 || param       || `@param {type} [name] description`  || an optional parameter.                           ||
 || private     || `@private`       || will be excluded from the documentation without the `-p` option.      ||
@@ -26,4 +27,3 @@
 || scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
 || static      || `@static`        || used with a class to declare the class has no constructor. ||
 || type      || `@type whattype`        || the property is of type whattype. ||
-
