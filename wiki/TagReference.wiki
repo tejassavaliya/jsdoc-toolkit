@@ -7,6 +7,7 @@
 || class || `@class description`                    || used with a constructor to provide a description of the class separate from the constructor's description. used with an object literal to treat the object as a class. ||
 || config || `@config {type} propertyname description`   || used to document a required property of a parameter. if it follows a parameter then it is assumed to apply to that parameter. ||
 || constructor || `@constructor`                    || mark this function as a constructor. ||
+|| deprecated || `@deprecated description`                    || used to provide information about a deprecation of a class, method or object. ||
 || description || `@description`                    || a description of this (synonym `desc`). this is an alternative to including an untagged description before any tags. ||
 || event|| `@event` || mark this method as an event on the containing class. ||
 || example|| `@example examplecode`                    || an example of how to use the function or object. ||
