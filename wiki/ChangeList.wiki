@@ -18,7 +18,7 @@
   * Added @namespace as synonym for @static @class -- issue #56.
   * Added ability to have the @param {type} come after the @param name (patch submitted by  bfattori)-- issue #61.
   * Fixed bug that appeared when using the -D option on the command line in conjunction with a D option in a configuration file. Configuration file D options now combine with commandline D options -- issue #62.
-  * Added support for the @deprecated tag -- issue #63.
+  * Added support for the @deprecated tag (patch submitted by bfattori) -- issue #63.
 
 === 1.3.3 ===
   * Fixed bug that prevented object summaries in the Sunny template from being limited to the first sentence -- issue #47, issue #51.
