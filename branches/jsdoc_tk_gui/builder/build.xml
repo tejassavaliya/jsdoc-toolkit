@@ -73,11 +73,12 @@
 	<target name="JAR" depends="COMPILE" description="Construction des jars">
 		<echo message="Construction des jars ..."/>
 		<!--<mkdir dir="${dist.dir}/lib" />-->
-		<delete file="${lib.dir}/${jarO.name}.jar" />
-		<delete file="${lib.dir}/${jar.name}.jar" /><!-- lib -->
-		<jar jarfile="${lib.dir}/${jar.name}.jar" manifest="MANIFEST.MF" basedir="${bin.dir}" />
+		
+		<delete file="${setup.dir}/${jar.name}.jar" /><!-- lib -->
+		<jar jarfile="${setup.dir}/${jar.name}.jar" manifest="MANIFEST.MF" basedir="${bin.dir}" />
 		<delete file="${lib.dir}/${src.name}.jar" /><!-- lib -->
 		<jar jarfile="${lib.dir}/${src.name}.jar" manifest="MANIFEST.MF" basedir="${src.dir}" />
+		
 		<echo message="=>OK - Construction des jars"/>
 	</target>
 	
@@ -90,15 +91,21 @@
 		<delete file="../build/JsDocToolkit.tar.bz2" />
 		<tar longfile="gnu" destfile="../build/JsDocToolkit.tar.bz2" compression="bzip2">
 			
-			<tarfileset dir="../setup/" >
+			<tarfileset dir="../setup/" prefix="JsDocToolkit">
+				<include name="jsDoc/**" />
 				<include name="conf/**" />
 				<include name="lang/**" />
 				<include name="lib/*.jar" />
 				<include name="log/**" />
-				<include name="output/**" />
-				<include name="template/**" />
+				<include name="examples/**" />
+				<include name="test/**" />
+				<include name="plugins/**" />
+				<include name="templates/**" />
 				<include name="workingDirectory/**" />
-			</tarfileset>			
+				<include name="README.txt"/>
+				<include name="jsdoctk.jar"/>
+			</tarfileset>		
+			
 		</tar>	
 					
 		<echo message="=>OK"/>
@@ -109,17 +116,22 @@
 		
 		<!-- Win Zip Lite  basedir="../setup" excludes="jre1.6.0/**" -->
 		<delete file="../build/JsDocToolkit.zip" />
-		<zip longfile="gnu" destfile="../build/JsDocToolkit.zip" compression="bzip2">
+		<zip destfile="../build/JsDocToolkit.zip" >
 			
-			<zipfileset dir="../setup/" >
+			<zipfileset dir="../setup/" prefix="JsDocToolkit">
+				<include name="jsDoc/**" />
 				<include name="conf/**" />
 				<include name="lang/**" />
 				<include name="lib/*.jar" />
 				<include name="log/**" />
-				<include name="output/**" />
-				<include name="template/**" />
+				<include name="examples/**" />
+				<include name="test/**" />
+				<include name="plugins/**" />
+				<include name="templates/**" />
 				<include name="workingDirectory/**" />
-			</zipfileset>			
+				<include name="README.txt"/>
+				<include name="jsdoctk.jar"/>
+			</zipfileset>	
 		</zip>	
 			
 		<echo message="=>OK"/>
