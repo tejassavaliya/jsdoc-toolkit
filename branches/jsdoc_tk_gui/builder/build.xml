@@ -93,8 +93,6 @@
 			
 			<tarfileset dir="../setup/" prefix="JsDocToolkit">
 				<include name="jsDoc/**" />
-				<include name="conf/**" />
-				<include name="lang/**" />
 				<include name="lib/*.jar" />
 				<include name="log/**" />
 				<include name="examples/**" />
@@ -120,8 +118,6 @@
 			
 			<zipfileset dir="../setup/" prefix="JsDocToolkit">
 				<include name="jsDoc/**" />
-				<include name="conf/**" />
-				<include name="lang/**" />
 				<include name="lib/*.jar" />
 				<include name="log/**" />
 				<include name="examples/**" />
