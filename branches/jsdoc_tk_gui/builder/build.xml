@@ -33,7 +33,7 @@
 	<!-- Nettoyage -->
 	<target name="CLEAN" description="Clean up">
 		<echo message="Suppression des répertoires de compilation ..."/>
-		<delete dir="${build.dir}" />
+		<delete dir="${release.dir}" />
 		<delete dir="${bin.dir}" />
 		<delete dir="${doc.dir}" />
 		<!--<delete dir="${tmp.dir}" />-->
@@ -44,7 +44,7 @@
 	<!-- Initialisation des répertoires -->
 	<target name="INIT" depends="CLEAN">
 		<echo message="Initialisation des répertoires de compilation ..."/>
-		<mkdir dir="${build.dir}" />
+		<mkdir dir="${release.dir}" />
 		<mkdir dir="${bin.dir}" />
 		<!--<mkdir dir="${tmp.dir}" />-->
 		<!--<mkdir dir="${log.dir}" />-->
@@ -88,8 +88,8 @@
 		<echo message="Génération des Tar pour Linux"/>
 		
 		<!-- LINUX TAR Lite  basedir="../setup" excludes="jre1.6.0/**" -->
-		<delete file="../build/JsDocToolkit.tar.bz2" />
-		<tar longfile="gnu" destfile="../build/JsDocToolkit.tar.bz2" compression="bzip2">
+		<delete file="${release.dir}/JsDocToolkit.tar.bz2" />
+		<tar longfile="gnu" destfile="${release.dir}/JsDocToolkit.tar.bz2" compression="bzip2">
 			
 			<tarfileset dir="../setup/" prefix="JsDocToolkit">
 				<include name="jsDoc/**" />
@@ -115,8 +115,8 @@
 		<echo message="Génération des Zip"/>
 		
 		<!-- Win Zip Lite  basedir="../setup" excludes="jre1.6.0/**" -->
-		<delete file="../build/JsDocToolkit.zip" />
-		<zip destfile="../build/JsDocToolkit.zip" >
+		<delete file="${release.dir}/JsDocToolkit.zip" />
+		<zip destfile="${release.dir}/JsDocToolkit.zip" >
 			
 			<zipfileset dir="../setup/" prefix="JsDocToolkit">
 				<include name="jsDoc/**" />
