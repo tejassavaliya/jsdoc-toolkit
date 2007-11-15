@@ -24,7 +24,7 @@ Colorful and shiny. This is a very attractive and fun addition to the template c
 
 = Old English Template =
 
-A better JavaDoc style template. Includes support for inheritance tree!
+A better !JavaDoc style template. Includes support for inheritance tree!
 
   * Created by bfattori
 
