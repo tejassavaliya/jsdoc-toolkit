@@ -27,6 +27,7 @@ Colorful and shiny. This is a very attractive and fun addition to the template c
 A better !JavaDoc style template. Includes support for inheritance tree!
 
   * Created by bfattori
+  * Available at http://www.renderengine.com/files/oldenglish.zip
 
 
 = Spicey Template =
