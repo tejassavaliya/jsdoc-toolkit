@@ -19,24 +19,24 @@ If you wish your documentation to be most like !JavaDoc, this template is meant 
 
 Colorful and shiny. This is a very attractive and fun addition to the template collection.
 
-  * Created by inamorix.
-  * Available at http://lib.metatype.jp/madtemplate/
+  * Creator: inamorix.
+  * Available at: http://lib.metatype.jp/madtemplate/
 
 = Old English Template =
 
 A better !JavaDoc style template. Includes support for inheritance tree!
 
-  * Created by bfattori
-  * Available at http://www.renderengine.com/files/oldenglish.zip
+  * Creator: bfattori
+  * Available at: http://www.renderengine.com/files/oldenglish.zip
 
 
 = Spicey Template =
 
 Super usable and easy to understand. Has many enhancements like collapsable tree-style menus.
 
-Created by Vince Spicer.
-  * Demo at http://vinces.ca/jsdocs/
-  * Download from http://vinces.ca/jsdocs/spicey.tgz
+  * Creator: Vince Spicer.
+  * Demo at: http://vinces.ca/jsdocs/
+  * Available at: http://vinces.ca/jsdocs/spicey.tgz
  
  
  
