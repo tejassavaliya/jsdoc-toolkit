@@ -11,7 +11,7 @@ Simple, easy to understand format.
 
 = Sunny Template =
 
-If you wish your documentation to be most like !JavaDoc, this template is meant for you.
+If you wish your documentation to be most like !JavaDoc, this template is meant for you. But try Old English as well.
 
   * Included in the regular distribution.
 
