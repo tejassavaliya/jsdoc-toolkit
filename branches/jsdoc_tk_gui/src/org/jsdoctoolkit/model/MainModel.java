@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -61,9 +62,11 @@ public class MainModel extends AbstractModel{
         return isDevelopperMode;
     }
     
-    public void run(){
+    public void run(OutputStream os){
     	
-    	//org.mozilla.javascript.tools.shell.Main.setOut(new PrintStream());
+    	org.mozilla.javascript.tools.shell.Main.setOut(new PrintStream(os));
+	
+    	org.mozilla.javascript.tools.shell.Main.main(getJsDocParameter().getArguments());
     }
 
 	/**

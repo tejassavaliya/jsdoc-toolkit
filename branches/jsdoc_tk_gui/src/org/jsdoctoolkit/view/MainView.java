@@ -1,6 +1,7 @@
 package org.jsdoctoolkit.view;
 
 import java.awt.BorderLayout;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
@@ -8,6 +9,9 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 
 import javax.swing.BorderFactory;
@@ -23,6 +27,8 @@ import javax.swing.JTextField;
 import javax.swing.JTree;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.jsdoctoolkit.image.IconFactory;
 import org.jsdoctoolkit.model.MainModel;
@@ -48,11 +54,18 @@ public class MainView extends AbstractView implements ActionListener{
 
     private JButton changeWD;
     
+    private JCheckBox showPrivate;
+    private JCheckBox showAll;
+    private JCheckBox showAllE;
+    
     private JTextField tfOD;
 
     private JButton changeOD;
+    private JButton see;
 
     private JTree tree;
+    
+    private JButton start;
     
 
     public MainView(MainModel mm){
@@ -116,7 +129,9 @@ public class MainView extends AbstractView implements ActionListener{
         gbc.gridx = 1;
         gbc.gridy = 3;
         gbc.gridwidth = 2;
-        jsDocPanel.add(new JButton("Start"), gbc); 
+        start = new JButton("Start");
+        start.addActionListener(this);
+        jsDocPanel.add(start, gbc); 
                 
         return jsDocPanel;
     }
@@ -142,6 +157,7 @@ public class MainView extends AbstractView implements ActionListener{
         this.wdPanel.add(new JLabel("Recurse : "));
         JComboBox cbb = new JComboBox(new String[]{"0","1","2","3","4","5","6"});
         cbb.addActionListener(this);
+        cbb.setActionCommand("recurse");
 
         this.wdPanel.add(cbb);
 
@@ -156,6 +172,7 @@ public class MainView extends AbstractView implements ActionListener{
    
         JComboBox cbb = new JComboBox(((MainModel)getModel()).getTemplatesList());
         cbb.addActionListener(this);
+        cbb.setActionCommand("template");
 
         this.tplPanel.add(cbb);
 
@@ -202,15 +219,21 @@ public class MainView extends AbstractView implements ActionListener{
         gbc.anchor = GridBagConstraints.NORTHWEST;
         gbc.gridx = 0;
         gbc.gridy = 0;
-        oPanel.add(new JCheckBox(), gbc);
+        showPrivate = new JCheckBox(); 
+        showPrivate.addActionListener(this);
+        oPanel.add(showPrivate, gbc);
         
         gbc.gridx = 0;
         gbc.gridy = 1;
-        oPanel.add(new JCheckBox(), gbc);     
+        showAll = new JCheckBox();
+        showAll.addActionListener(this);
+        oPanel.add(showAll, gbc);     
         
         gbc.gridx = 0;
         gbc.gridy = 2;
-        oPanel.add(new JCheckBox(), gbc); 
+        showAllE = new JCheckBox();
+        showAllE.addActionListener(this);
+        oPanel.add(showAllE, gbc); 
         
         gbc.gridx = 1;
         gbc.gridy = 0;
@@ -248,7 +271,7 @@ public class MainView extends AbstractView implements ActionListener{
 
         jp.add(this.changeOD);
         
-        JButton see = new JButton("Test Doc", IconFactory.getImageIcon("html_mini",
+        see = new JButton("Test Doc", IconFactory.getImageIcon("html_mini",
                 IconFactory.GIF));
         see.addActionListener(this);
 
@@ -317,11 +340,25 @@ public class MainView extends AbstractView implements ActionListener{
 
     public void actionPerformed(ActionEvent e) {
         
+    	if(e.getSource() instanceof JComboBox){
+    		
+    		if("recurse".equals(e.getActionCommand())){
+    			
+    			((MainModel)getModel()).getJsDocParameter().setSubLevel(Integer.parseInt( (String) ((JComboBox)e.getSource()).getSelectedItem()));
+    			
+    		}else if("template".equals(e.getActionCommand())){
+    			
+    			
+    			
+    		}
+    		
+    	}
     	if (e.getSource().equals(this.changeWD)) {
             JFileChooser jfc = new JFileChooser();
             jfc.setControlButtonsAreShown(true);
             jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-            // jfc.setFileFilter(filter);
+            FileFilter filter = new FileNameExtensionFilter("Valide", "*.");
+            jfc.setFileFilter(filter);
             jfc.setCurrentDirectory(((MainModel)getModel()).getWorkingDirectoryFile());
             if (jfc.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
                 ((MainModel)getModel()).getJsDocParameter().setWorkingDirectory(jfc.getSelectedFile().getName());
@@ -355,6 +392,39 @@ public class MainView extends AbstractView implements ActionListener{
 				}
             }
         }
+    	
+    	if(e.getSource().equals(showPrivate)){
+    		((MainModel)getModel()).getJsDocParameter().setPrivate(showPrivate.isSelected());
+    	}
+    	
+    	if(e.getSource().equals(showAll)){
+    		((MainModel)getModel()).getJsDocParameter().setIncludeAll(showAll.isSelected());
+    	}
+    	
+    	if(e.getSource().equals(showAllE)){
+    		((MainModel)getModel()).getJsDocParameter().setIncludeAllEvenOthers(showAllE.isSelected());
+    	}
+    	
+    	if(e.getSource().equals(start)){
+    		ByteArrayOutputStream os = new ByteArrayOutputStream();
+    		((MainModel)getModel()).run(os);
+    		console.setText(new String(os.toByteArray()));
+    		try{
+    			os.close();
+    		}catch(Exception ex){
+    			ex.printStackTrace();
+    		}
+    	}
+    	
+    	if(e.getSource().equals(see)){
+    		File f = new File(((MainModel)getModel()).getOutputDirectoryFile().getAbsolutePath()+File.separator+"index.html");
+    		try {
+				Desktop.getDesktop().open(f);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+    	}
     }
 
 	@Override

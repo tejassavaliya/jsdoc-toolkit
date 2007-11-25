@@ -1,5 +1,7 @@
 package org.jsdoctoolkit.business;
 
+import java.util.StringTokenizer;
+
 public class JsDocParameter {
 	
 	
@@ -147,20 +149,49 @@ public class JsDocParameter {
 		this.workingDirectory = workingDirectory;
 	}
 	
-	
-	public String buildCommand(){
-		
+
+
+	public String[] getArguments() {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append((getWorkingDirectory()!=null)? getWorkingDirectory()+" " : "");
-		sb.append((getOutputDirectory()!=null)? "-d="+getOutputDirectory()+" " : "");
-		sb.append((getTemplateDirectory()!=null)? "-t="+getTemplateDirectory()+" " : "");
-		sb.append((isPrivate())? "-p ": "");
-		sb.append((isIncludeAll())? "-a ": "");
-		sb.append((isIncludeAllEvenOthers())? "-A ": "");
+		sb.append("app/run.js");
 		
+		if(isPrivate){
+			sb.append("::-p");
+		}
+		if(isIncludeAll){
+			sb.append("::-a");
+		}
+		if(isIncludeAllEvenOthers){
+			sb.append("::-A");
+		}
 		
-		return sb.toString();
+		if(subLevel > 0){
+			sb.append("::-r="+subLevel);
+		}
+		
+		if(getWorkingDirectory()!=null){
+			sb.append("::"+getWorkingDirectory());
+		}
+		
+		if(getTemplateDirectory()!=null){
+			sb.append("::-t="+getTemplateDirectory());
+		}else{
+			System.err.println("Erreur fatal pas de template");
+		}
+
+		if(getOutputDirectory()!=null){
+			sb.append("::-d="+getOutputDirectory());
+		}
+		
+		StringTokenizer st =new StringTokenizer(sb.toString(), "::");
+		String [] args = new String[st.countTokens()];
+		for(int i = 0 ; st.hasMoreElements();i++){
+			args[i] = st.nextToken();
+			System.out.println(args[i]);
+		}
+				
+		return args;
 	}
 	
 	
