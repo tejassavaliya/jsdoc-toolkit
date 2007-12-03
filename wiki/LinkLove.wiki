@@ -23,7 +23,7 @@ See who's using or talking about !JsDoc.
 == Sarissa==
  * http://dev.abiss.gr/sarissa
 
-== SproutCore ==
+== !SproutCore ==
  * http://www.sproutcore.com/
 
 == !TimePlot ==
