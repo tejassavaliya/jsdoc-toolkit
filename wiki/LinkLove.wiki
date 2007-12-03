@@ -23,6 +23,9 @@ See who's using or talking about !JsDoc.
 == Sarissa==
  * http://dev.abiss.gr/sarissa
 
+== SproutCore ==
+ * http://www.sproutcore.com/
+
 == !TimePlot ==
  * http://simile.mit.edu/timeplot/
 
