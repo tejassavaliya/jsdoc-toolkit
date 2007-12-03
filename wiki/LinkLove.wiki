@@ -14,7 +14,7 @@ See who's using or talking about !JsDoc.
 == Jash: !JavaScript Shell ==
  * http://www.billyreisinger.com/jash/jsdoc/
 
-== !JTemplates ==
+== jTemplates ==
  * http://jtemplates.tpython.com/doc/
 
 == Maven JSTools Plugin ==
