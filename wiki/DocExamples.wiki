@@ -323,4 +323,22 @@ var Record = new function() {
 }
 }}}
 
+= Creating Namespace =
 
+ * You might use an object literal as a "namespace" to hold member objects together, like a collection of similar methods and properties. Use the `@namepace` tag to describe this.
+ * When using the "sunny" template, a namespace is treated as a static class, a class that cannot be constructed by the user.
+
+{{{
+
+/**
+ @namespace Holds all Filebox functionality.
+*/
+Filebox = {
+    lookup: function() {
+    },
+    add: function() {
+    },
+    remove: function() {
+    }
+}
+}}}
