@@ -84,27 +84,6 @@ This would work exactly the same if you were accessing all the _values_ stored i
 </ul>
 }}}
 
-Optionally you can use the `sortby` attribute to sort the values, either by the values themselves, or by their keys, like so:
-
-{{{
-<ul>
-<for each="thing" in="data.things" sortby="values">
-	<li>{+thing+}</li>
-</for>
-</ul>
-}}}
-
-To get:
-
-{{{
-<ul>
-
-	<li>blue</li>
-	<li>red</li>
-
-</ul>
-}}}
-
 If you were only interested in outputting the keys, not the values, you could use the built-in `keys` function like so:
 
 {{{
@@ -247,8 +226,6 @@ From within your `publish.js` file you can copy files from the template director
 {{{
 	IO.copyFile(context.t+"mystyle.css", context.d);
 }}}
-
-
 
 
 
