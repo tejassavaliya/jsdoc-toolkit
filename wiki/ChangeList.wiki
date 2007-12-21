@@ -6,6 +6,7 @@
 === 1.4.0 beta2 (not yet released) ===
   * Improved error reporting for !JsDoc Templates.
   * Removed non-functioning !JsPlate attribute "sortby" from the `for` tag.
+  * Added ability of @namespace to be recognized on members that are not defined inline -- issue #68.
 
 === 1.4.0 beta ===
   * Added "namespace" section to sweet template, to represent static classes.
