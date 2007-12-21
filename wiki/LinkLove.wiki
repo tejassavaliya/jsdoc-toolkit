@@ -5,6 +5,9 @@
 
 See who's using or talking about !JsDoc.
 
+== AppJet ==
+ * http://appjet.com/docs/libref/
+
 == Fader ==
  * http://www.eternal.co.za/scripts/fader/index.html
 
