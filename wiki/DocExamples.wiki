@@ -20,7 +20,7 @@ function recast(employeeId, newRole) {
 }
 }}}
 
-= Paramaters =
+= Parameters =
 
   * Add the @param tag to your comment to document parameter. It takes the form `{type} name description`.
 
