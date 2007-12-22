@@ -342,3 +342,44 @@ Filebox = {
     }
 }
 }}}
+
+= Shared Doclets =
+
+ * Sometimes you want to apply one or more tags to many doclets. You could cut and past the tags into every doclet but that is tedious and bloats your file with repeated information. Use a "shared doclet" to accomplish this more efficiently.
+  * Any tags in a doclet that begins with the special series of characters: "#@+" will be shared with every subsequent doclet until the end of the file or a doclet that contains "#@-" is encountered.
+
+{{{
+/**#@+
+  @private
+  @memberOf RecordSet
+*/
+
+/** Is the recordset locked? */
+var locked = false;
+
+/** 
+  Destroy a particular record.
+  @param id The id of the record to destroy.
+*/
+function shred(id) {}
+
+/**#@-*/
+}}}
+
+Is the same as writing:
+
+{{{
+/** Is the recordset locked?
+  @private
+  @memberOf RecordSet
+*/
+var locked = false;
+
+/** 
+  Destroy a particular record.
+  @param id The id of the record to destroy.
+  @private
+  @memberOf RecordSet
+*/
+function shred(id) {}
+}}}
