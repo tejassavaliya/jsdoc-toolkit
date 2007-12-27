@@ -3,11 +3,12 @@
 
 = Change List =
 
-=== 1.4.0 beta2 (not yet released) ===
+=== 1.4.0 ===
   * Improved error reporting for !JsDoc Templates.
   * Removed non-functioning !JsPlate attribute "sortby" from the `for` tag.
   * Added ability of @namespace to be recognized on members that are not defined inline -- issue #68.
   * Added ability to detect when source filenames passed in from the command line don't exist. Now warns and skips file, previously tried to parse and crashed.
+  * Improved sweet and sunny templates: now has more flexible and improved linking back to local documentation files whenever an object "type" is displayed.
 
 === 1.4.0 beta ===
   * Added "namespace" section to sweet template, to represent static classes.
