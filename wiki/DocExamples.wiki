@@ -316,7 +316,7 @@ function Sorter() {
   * A different example of using this technique...
 
 {{{
-var Record = new function() {
+var Record = function() {
     return /** @scope Record */ {
         getRecord: function() {}
     };
