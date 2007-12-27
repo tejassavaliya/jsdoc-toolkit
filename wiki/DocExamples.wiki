@@ -320,7 +320,7 @@ var Record = new function() {
     return /** @scope Record */ {
         getRecord: function() {}
     };
-}
+}();
 }}}
 
 = Creating Namespace =
