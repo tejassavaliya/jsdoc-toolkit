@@ -292,7 +292,7 @@ function Filebox() {
 }
 
 SecureFilebox.prototype = new Filebox();
-SecureFilebox.prototype.constructor = Filebox;
+SecureFilebox.prototype.constructor = SecureFilebox;
 
 /**
  * @constructor 
