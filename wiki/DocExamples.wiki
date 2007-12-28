@@ -275,6 +275,35 @@ function getRecord(){
  */
 }}}
 
+= Augmenting Other Classes =
+
+  * If you have a constructor A that inherits methods from another constructor B, you would say that A "augments" B, by adding additional functionality to it.
+  * To indicate this relationship in your documentation use the `@augments` tag.
+
+{{{
+/**
+ * @constructor
+ */
+function Filebox() {
+    this.add = function() {
+    }
+    this.remove = function() {
+    }
+}
+
+SecureFilebox.prototype = new Filebox();
+SecureFilebox.prototype.constructor = Filebox;
+
+/**
+ * @constructor 
+ * @augments Filebox
+ */
+function SecureFilebox() {
+    this.shred = function() {
+    }
+}
+}}}
+
 = Changing Scope=
 
   * In complex cases it can be impossible for the !JsDoc parser to determine the scope and thus the full name of object properties and methods. In these cases the `@scope` tag tells the parser what the parent-scope is of a property or method.
