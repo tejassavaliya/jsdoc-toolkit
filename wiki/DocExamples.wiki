@@ -306,7 +306,30 @@ function SecureFilebox() {
 }
 }}}
 
-= Changing Scope=
+= Inheriting Some Methods of Another Class =
+  * If you have a constructor that only inherits one or some methods from another constructor, then use the `@inherits` tag to indicate which specific methods are inherited.
+  * This is a more specific form of the `@augments` tag. Whereas `@augments` indicates that *all* methods are inherited, the `@inherits` tag indicates *one* method is inherited.
+
+{{{
+/**
+ * @constructor
+ */
+function SafeDispose() {
+}
+SafeDispose.prototype.burn = function() {};
+SafeDispose.prototype.smash = function() {};
+
+/**
+ * @constructor 
+ * @inherits SafeDispose.burn
+ */
+function SecureFile() {
+}
+SecureFile.prototype.shred = function() {};
+SecureFile.prototype.burn = SafeDispose.prototype.burn;
+}}}
+
+= Changing Scope =
 
   * In complex cases it can be impossible for the !JsDoc parser to determine the scope and thus the full name of object properties and methods. In these cases the `@scope` tag tells the parser what the parent-scope is of a property or method.
   * The `@scope` tag _must_ immediately precede the opening of an object literal. Within that object definition all properties will be the applied to the given containing scope.
