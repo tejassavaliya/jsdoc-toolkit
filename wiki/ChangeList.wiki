@@ -8,6 +8,7 @@
   * Improved and added many unit tests.
   * Improved support for adding members to built-in classes: previously the built-in parent class had to be documented by the user, now such classes are automatically included in the documentation.
   * Added new meta tag to define shortcut names for object names in your source code.
+  * Added support for default values in optional parameters.
 
 === 1.4.0 ===
   * Improved error reporting for !JsDoc Templates.
