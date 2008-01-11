@@ -17,6 +17,9 @@ See who's using or talking about !JsDoc.
 == Helma ==
  * http://helma.zumbrunn.com/reference/
 
+== iCube Online Operating System ==
+ * http://www.oos.cc/
+
 == Jash: !JavaScript Shell ==
  * http://www.billyreisinger.com/jash/jsdoc/
 
