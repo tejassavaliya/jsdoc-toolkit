@@ -35,8 +35,7 @@ A better !JavaDoc style template. Includes support for inheritance tree.
 Super usable and easy to understand. Has many enhancements like collapsable tree-style menus.
 
   * Creator: Vince Spicer.
-  * Demo at: http://vinces.ca/jsdocs/
-  * Available at: http://vinces.ca/jsdocs/spicey.tgz
+  * Demo at: http://projects.vinces.ca/jsdocs/
  
  
  
