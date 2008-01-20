@@ -35,6 +35,9 @@ See who's using or talking about !JsDoc.
 == Maven JSTools Plugin ==
  * http://dev.abiss.gr/mvn-jstools/
 
+== mapy.cz ==
+ * http://api.mapy.cz/static?doc=index
+
 == Open Kosmaczewski ==
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
 
