@@ -5,6 +5,9 @@
 
 See who's using or talking about !JsDoc.
 
+== alternateidea ==
+ * [http://alternateidea.com/blog/articles/2007/12/28/widgets-the-yui-way Widgets the YUI Way]
+
 == !AppJet ==
  * http://appjet.com/docs/libref/
 
@@ -34,6 +37,9 @@ See who's using or talking about !JsDoc.
 
 == Open Kosmaczewski ==
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
+
+== Open Social ==
+ * http://code.google.com/apis/opensocial/docs/javascript-0.6/reference/opensocial.html
 
 == Sarissa==
  * http://dev.abiss.gr/sarissa
