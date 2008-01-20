@@ -14,6 +14,9 @@ See who's using or talking about !JsDoc.
 == Frozen Toolkit ==
  * http://frozentoolkit.frozen-o.com/
 
+== GPS Gate ==
+  * http://gpsgate.com/docs/gpsgateservices/jsdoc/index.html
+
 == Helma ==
  * http://helma.zumbrunn.com/reference/
 
