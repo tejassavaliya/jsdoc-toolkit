@@ -1,13 +1,84 @@
-#summary One-sentence summary of this page.
+#summary Documentation specific to Version 2
 
 = Introduction =
 
-Add your content here.
+This covers techniques and features that are known to work with *Version 2* of !JsDoc Toolkit. There is no guarantee that any information here will apply to previous versions.
 
 
-= Details =
+= What's New in 2? =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+To come.
+
+= Documenting Code Using the Prototype.js Framework =
+
+It has always been possible to document code using frameworks, but Version 2 comes with a Prototype plugin that makes documenting code using the Prototype.js Framework easier than ever.
+
+_Example of documenting Class.create, including the use of subclasses._
+{{{
+/** Example of 1.6 style of Class.create() */
+var Animal = Class.create({
+  initialize: function(name, sound) {
+    this.name  = name;
+    this.sound = sound;
+  },
+
+  speak: function(one) {
+    alert(this.name + " says: " + this.sound + "!");
+  }
+});
+
+/** @augments Animal */
+var Snake = Class.create(Animal, {
+  initialize: function($super, name) {
+    $super(name, 'hissssssssss');
+  }
+});
+}}}
+
+The `Class.create(...)` construct is automatically recognized by !JsDoc Toolkit's parser, and the plugin ensures that the correct methods will automatically be added to the Animal class for you.
+
+If you are still using a pre-1.6 version of Prototype.js, you can accomplish a similar result with a few extra !JsDoc tags, like so...
+
+{{{
+/**
+  Pre-1.6 syntax for Prototype.js Class.create()
+  @name MySampleClass
+  @constructor
+*/
+var Animal = Class.create();
+
+Animal.prototype = {
+  initialize: function(sound) {
+    this.sound = sound;
+  },
+  speak: function() {
+    alert(this.sound);
+  }
+};
+}}}
+
+Using the Prototype.js `addMethod()` feature can be documented as well, using the `@scope` tag.
+
+{{{
+/** Example of 1.6 style of Class.create() */
+var Animal = Class.create({
+  initialize: function(name, sound) {
+    this.name  = name;
+    this.sound = sound;
+  },
+
+  speak: function() {
+    alert(this.name + " says: " + this.sound + "!");
+  }
+});
+
+/** @scope Animal.prototype */
+Animal.addMethods({
+  speak: function(whatToSay) { // redefining Animal#speak
+    alert(this.name + 'snarls: ' + this.sound + '!');
+  },
+  announce: function() { // adding in a new method
+    alert(this.name + 'snarls: ' + this.sound + '!!!!!');
+  }
+});
+}}}
