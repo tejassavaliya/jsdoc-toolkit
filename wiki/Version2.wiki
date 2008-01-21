@@ -20,7 +20,7 @@ This covers techniques and features that are known to work with *Version 2* of !
   * New "jsdoc" template now produces fully W3C valid XHTML.
   * Inline parameter type hint comments are now documented.
   * Fixed error: Locally scoped variables (declared with var) no longer appear as global.
-  * It is now possible to run JsDoc Toolkit from any directory.
+  * It is now possible to run !JsDoc Toolkit from any directory.
   * Added support for inline {@link ...} tags.
 
 = Documenting Code Using the Prototype.js Framework =
