@@ -57,7 +57,7 @@ Animal.prototype = {
 };
 }}}
 
-Using the Prototype.js `addMethod()` feature can be documented as well, using the `@scope` tag.
+Using the Prototype.js `addMethods()` feature can be documented as well, using the `@scope` tag.
 
 {{{
 /** Example of 1.6 style of Class.create() */
