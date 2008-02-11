@@ -42,7 +42,7 @@ See who's using or talking about !JsDoc.
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
 
 == Open Social (used on Google's Orkut) ==
- * http://code.google.com/apis/opensocial/docs/javascript-0.6/reference/opensocial.html
+ * http://code.google.com/apis/opensocial/docs/0.7/reference/opensocial.html
 
 == Sarissa==
  * http://dev.abiss.gr/sarissa
