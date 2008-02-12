@@ -17,6 +17,9 @@ See who's using or talking about !JsDoc.
 == Frozen Toolkit ==
  * http://frozentoolkit.frozen-o.com/
 
+== Google Gadgets ==
+  * http://code.google.com/apis/gadgets/docs/reference/gadgets.json.html
+
 == GPS Gate ==
   * http://gpsgate.com/docs/gpsgateservices/jsdoc/index.html
 
