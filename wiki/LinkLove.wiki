@@ -47,6 +47,9 @@ See who's using or talking about !JsDoc.
 == Open Social (used on Google's Orkut) ==
  * http://code.google.com/apis/opensocial/docs/0.7/reference/opensocial.html
 
+== Render Engine ==
+  * http://code.google.com/p/renderengine/
+
 == Sarissa==
  * http://dev.abiss.gr/sarissa
 
