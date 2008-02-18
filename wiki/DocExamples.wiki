@@ -279,8 +279,7 @@ function getRecord(){
 
   * If you have a constructor A that inherits methods from another constructor B, you would say that A "augments" B, by adding additional functionality to it.
   * To indicate this relationship in your documentation use the `@augments` tag.
-  * The term "class augmentation" is taken from, and explained in, Douglas Crockford's essay entitled [http://www.crockford.com/javascript/inheritance.html Classical Inheritance in JavaScript].
-  * To keep !JsDoc Toolkit compatible with other documentation tools you _may_ use `@extends` as a synonym for `@augments`.
+  * The `@extends` tag is a synonym for `@augments`.
 
 {{{
 /**
