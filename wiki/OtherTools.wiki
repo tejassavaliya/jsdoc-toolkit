@@ -19,9 +19,7 @@ C:\DirectoryToWhereJsDocToolkitIsLocated\jsdoc_toolkit
 
 Arguments
 {{{
--jar app/js.jar app/run.js -r=4 -t=templates/htm "-d=C:\PathToWhereDocIsSaved" "C:\PathToWebsiteToDocument"
+-jar app/js.jar app/run.js -r=4 -t=templates/sunny "-d=C:\PathToWhereDocIsSaved" "C:\PathToWebsiteToDocument"
 }}}
 
 For more information about arguments see CmdlineOptions
-
-
