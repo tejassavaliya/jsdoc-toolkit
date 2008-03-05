@@ -32,6 +32,9 @@ See who's using or talking about !JsDoc.
 == Jash: !JavaScript Shell ==
  * http://www.billyreisinger.com/jash/jsdoc/
 
+== jsdoc toolkit ext
+  * http://sourceforge.net/projects/jsdoc-tk-ext/
+
 == jTemplates ==
  * http://jtemplates.tpython.com/doc/
 
