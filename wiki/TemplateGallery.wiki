@@ -24,7 +24,7 @@ If you wish your documentation to be most like !JavaDoc, this template is meant 
 
   * Included in the regular distribution.
 
-= Mad Template =
+== Mad Template ==
 
 Colorful and shiny. This is a very attractive and fun addition to the template collection.
 
