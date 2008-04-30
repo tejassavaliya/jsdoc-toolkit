@@ -2,14 +2,23 @@
 
 This is a gallery of templates available for use with !JsDoc Toolkit.
 
+= Version 2 Templates =
 
-= Sweet Template =
+== jProton ==
+
+Pedro Simonetti's beat everyone by creating the first custom template for Version 2. Not only is he fast, but he makes a pretty amazing template too.
+
+  * http://docs.jproton.com.br/
+
+= Version 1.4 Templates =
+
+== Sweet Template ==
 
 Simple, easy to understand format.
 
   * Included in the regular distribution.
 
-= Sunny Template =
+== Sunny Template ==
 
 If you wish your documentation to be most like !JavaDoc, this template is meant for you. But try Old English as well.
 
@@ -22,7 +31,7 @@ Colorful and shiny. This is a very attractive and fun addition to the template c
   * Creator: inamorix.
   * Available at: http://lib.metatype.jp/madtemplate/
 
-= Old English Template =
+== Old English Template ==
 
 A better !JavaDoc style template. Includes support for inheritance tree.
 
@@ -30,7 +39,7 @@ A better !JavaDoc style template. Includes support for inheritance tree.
   * Available at: http://www.renderengine.com/files/oldenglish.zip
 
 
-= Spicey Template =
+== Spicey Template ==
 
 Super usable and easy to understand. Has many enhancements like collapsable tree-style menus.
 
