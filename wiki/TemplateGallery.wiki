@@ -6,7 +6,7 @@ This is a gallery of templates available for use with !JsDoc Toolkit.
 
 == jProton ==
 
-Pedro Simonetti's beat everyone by creating the first custom template for Version 2. Not only is he fast, but he makes a pretty amazing template too.
+Pedro Simonetti's amazing contribution has collapsing menus, and many customizations. Definitely worth a look.
 
   * http://docs.jproton.com.br/
 
