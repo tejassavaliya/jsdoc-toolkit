@@ -47,7 +47,7 @@ See who's using or talking about !JsDoc.
 == jTemplates ==
  * http://jtemplates.tpython.com/doc/
 
-== LabKey ==
+== !LabKey ==
   * https://www.labkey.org/download/clientapi_docs/
 
 == Maven JSTools Plugin ==
