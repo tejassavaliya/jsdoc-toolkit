@@ -10,11 +10,14 @@ See who's using or talking about !JsDoc.
 
 == Archtype !JavaScript Framework ==
 
- * [http://archetypejs.org/jsdoc/index.html]
+ * http://archetypejs.org/jsdoc/index.html
 
 == !AppJet ==
  * http://appjet.com/docs/libref/
 
+== Coherent MVC ==
+
+  * http://coherentjs.org/docs/api/
 == Fader ==
  * http://www.eternal.co.za/scripts/fader/index.html
 
