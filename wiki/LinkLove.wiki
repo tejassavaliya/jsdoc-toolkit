@@ -32,6 +32,9 @@ See who's using or talking about !JsDoc.
 == Helma ==
  * http://helma.zumbrunn.com/reference/
 
+== Hot Ruby ==
+  * http://hotruby.accelart.jp/jsdoc/
+
 == iCube Online Operating System ==
  * http://www.oos.cc/
 
