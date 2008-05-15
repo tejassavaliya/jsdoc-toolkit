@@ -8,6 +8,10 @@ See who's using or talking about !JsDoc.
 == alternateidea ==
  * [http://alternateidea.com/blog/articles/2007/12/28/widgets-the-yui-way Widgets the YUI Way]
 
+== Archtype !JavaScript Framework ==
+
+ * [http://archetypejs.org/jsdoc/index.html]
+
 == !AppJet ==
  * http://appjet.com/docs/libref/
 
