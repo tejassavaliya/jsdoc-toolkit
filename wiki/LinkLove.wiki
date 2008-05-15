@@ -57,7 +57,7 @@ See who's using or talking about !JsDoc.
  * http://api.mapy.cz/static?doc=index
 
 == !MySpace Developer Platform ==
-  * http://developer.myspace.com/community/myspace/myopenspaceEnumsV07.aspx
+  * http://developer.myspace.com/community/myspace/myopenspace.aspx
 
 == Open Kosmaczewski ==
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
