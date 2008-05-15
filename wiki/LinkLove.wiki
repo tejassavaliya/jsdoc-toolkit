@@ -9,15 +9,14 @@ See who's using or talking about !JsDoc.
  * [http://alternateidea.com/blog/articles/2007/12/28/widgets-the-yui-way Widgets the YUI Way]
 
 == Archtype !JavaScript Framework ==
-
  * http://archetypejs.org/jsdoc/index.html
 
 == !AppJet ==
  * http://appjet.com/docs/libref/
 
 == Coherent MVC ==
-
   * http://coherentjs.org/docs/api/
+
 == Fader ==
  * http://www.eternal.co.za/scripts/fader/index.html
 
@@ -47,6 +46,9 @@ See who's using or talking about !JsDoc.
 
 == jTemplates ==
  * http://jtemplates.tpython.com/doc/
+
+== LabKey ==
+  * https://www.labkey.org/download/clientapi_docs/
 
 == Maven JSTools Plugin ==
  * http://dev.abiss.gr/mvn-jstools/
