@@ -49,7 +49,7 @@ Many long-standing issues have been improved in Version 2.
 
 Not everything in Version 1 is forward compatible with version 2.
 
-  * @inherits - Is now a synonym for @[#borrows]. It requires a new syntax: `@borrows ... as ...`
+  * @inherits - Is now a synonym for @borrows. It requires a new syntax: `@borrows ... as ...`
   * @methodOf is a synonym for @function plus @memberOf.
   * Tag names @inherits and @scope changed to @borrows plus @lends.
   * Underscored symbols are now treated as if they have a @private tag by default.
