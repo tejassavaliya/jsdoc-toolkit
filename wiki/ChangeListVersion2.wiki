@@ -1,0 +1,55 @@
+#summary A list of changes for Version 2
+
+= Changes for Version 2 =
+
+== Version 2.0.1 ==
+
+== Changes From Versions 1.4.0 to 2.0.0 ==
+
+This is a list of changes you should be aware of when switching from versions 1 to 2.
+
+=== New Features ===
+
+Version 2 has several new features that make it more powerful than Version 1.
+
+  * Upgraded included version of Rhino from 1.6 to 1.7R1.
+  * Added ability to redefine parsing behavior with plugins.
+  * Added @default to document default values of members that are objects.
+  * Added ability to parse and refer to inner functions.
+  * Added ability to automatically create links to other symbols.
+  * New "jsdoc" template now produces fully W3C valid XHTML.
+  * Inline parameter type hint comments are now documented.
+  * It is now possible to run !JsDoc Toolkit from any directory.
+  * Added support for inline {@link ...} tags.
+  * Added support for the @constructs tag, used inside a @lends block.
+  * Added support for the @constant tag.
+  * Added support for the @field tag.
+  * Added support for the @public tag (applied to inner functions).
+  * Added support for the -s command line option to suppress source code output.
+  * Added support for the -n command line option to suppress all source code parsing.
+  * Added support for the nocode meta tag.
+   
+=== Improvements ===
+
+Many long-standing issues have been improved in Version 2.
+
+  * Removed circular references in parsed documentation objects.
+  * Improved inheritance handling, now properties and events can be inherited same as methods.
+  * Improved handling of cross-file relationships, now having two related objects in separate files is not a problem.
+  * Improved ability to recognize membership of previously defined objects.
+  * Fixed bug that appeared when calling a method to set properties of the instance referred to by "this".
+  * Fixed error: Locally scoped variables (declared with var) no longer appear as global.
+  * Multiple @lend tags now supported.
+  * Fixed bug that prevented the use of [] as a default value.
+  * @namespace tag can now be applied to functions, not just object literals.
+  * Improved support for anonymous constructors.
+  * Added new unit test framework.
+
+=== API Changes ===
+
+Not everything in Version 1 is forward compatible with version 2.
+
+  * @inherits - Is now a synonym for @[#borrows]. It requires a new syntax: `@borrows ... as ...`
+  * @methodOf is a synonym for @function plus @memberOf.
+  * Tag names @inherits and @scope changed to @borrows plus @lends.
+  * Underscored symbols are now treated as if they have a @private tag by default.
