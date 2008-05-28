@@ -2,9 +2,9 @@
 
 = Change List for Version 2 =
 
-== 2.0.1 (noyt yet released)==
+== 2.0.1 (not yet released) ==
 
-  * Fixed bug that prevented @fileOverview tag from being recognized.
+  * Fixed bug that prevented @fileOverview tag from being recognized. (revision 608)
 
 == Changes From Versions 1.4.0 to 2.0.0 ==
 
