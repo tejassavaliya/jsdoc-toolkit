@@ -1,13 +1,35 @@
-#summary One-sentence summary of this page.
+#summary Answers to Frequently Asked Questions.
 
-= Introduction =
+= FAQ =
 
-Add your content here.
+This section is "under construction."
 
+The information here applies to Version 2 of !JsDoc Toolkit.
 
-= Details =
+Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm afraid.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * How do I document the "module pattern?"
+
+== How do I document the "module pattern?" ==
+
+{{{
+/** @namespace */
+YOOHOO.myProject.myModule = function () {
+	/** @private */
+	var myPrivateVar = "";
+
+	/** @private */
+	var myPrivateMethod = function () {
+	}
+
+	/** @scope YOOHOO.myProject.myModule */
+	return  {
+		/** describe myPublicProperty here */
+		myPublicProperty: ""
+		
+		/** describe myPublicMethod here */
+		myPublicMethod: function () {
+		}
+	};
+}();
+}}}
