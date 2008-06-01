@@ -25,7 +25,7 @@ YOOHOO.myProject.myModule = function () {
 	/** @scope YOOHOO.myProject.myModule */
 	return  {
 		/** describe myPublicProperty here */
-		myPublicProperty: ""
+		myPublicProperty: "",
 		
 		/** describe myPublicMethod here */
 		myPublicMethod: function () {
