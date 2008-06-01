@@ -12,6 +12,8 @@ Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm
 
 == How do I document the "module pattern?" ==
 
+_Use options:_ -p
+
 {{{
 /** @namespace */
 YOOHOO.myProject.myModule = function () {
