@@ -11,6 +11,7 @@
   * Modified style sheet of jsdoc template to make more readable. (issue #151)
   * Fixed bug that prevented @since documentation from displaying correctly when it appeared in a class. (issue #150)
   * Fixed bug that caused inhertited properties to sometimes not resolve correctly. (issue #144)
+  * Modified so that trailing whitespace in @example is always trimmed. (issue #153)
 
 == Changes From Versions 1.4.0 to 2.0.0 ==
 
