@@ -2,7 +2,7 @@
 
 = Change List for Version 2 =
 
-== 2.0.1 (not yet released) ==
+== 2.0.1 ==
 
   * Fixed bug that prevented @fileOverview tag from being recognized.
   * Added support for @fieldOf as a synonym for @field plus @memberOf.
