@@ -11,6 +11,7 @@ Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm
   * How do I document the "module pattern?"
   * How do I define my own variables from the command line?
   * Can I use my own tags?
+  * Why isn't the jsdoc template better?
 
 == How do I document the "module pattern?" ==
 
@@ -78,3 +79,9 @@ In your template you can then access that tag like so:
 }}}
 
 To produce this output: style="color: orange"
+
+==Why isn't the jsdoc template better?==
+
+The architecture of !JsDoc Toolkit was built around the idea of templates for a very good reason: you are meant to use them. A great deal of work has gone into separating out the template code and designing a simple templating language in order to encourage this to happen.
+
+Traditionally the JSDoc output has tried to look like !JavaDoc but I've moved away from that. Now the template that is included with the standard distribution is purposely generic and is meant to be a starting point for you to create your own customized output.
