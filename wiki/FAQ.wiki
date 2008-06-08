@@ -9,6 +9,7 @@ The information here applies to Version 2 of !JsDoc Toolkit.
 Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm afraid.
 
   * How do I document the "module pattern?"
+  * How do I define my own variables from the command line?
 
 == How do I document the "module pattern?" ==
 
@@ -35,3 +36,19 @@ YOOHOO.myProject.myModule = function () {
 	};
 }();
 }}}
+
+==How do I define my own variables from the command line? ==
+
+Use the `-D` command line option to define one or more variables.
+
+{{{
+-D="status:Beta" -D="milestone:112"
+}}}
+
+These values can then be accessed in your template, like so:
+
+{{{
+<i>Project release status is {+ JSDOC.opt.D.status +}, milestone {+ JSDOC.opt.D.milestone +}.</i>
+}}}
+
+To produce this output: _Project release status is Beta, milestone 112.
