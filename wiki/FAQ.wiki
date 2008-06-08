@@ -10,6 +10,7 @@ Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm
 
   * How do I document the "module pattern?"
   * How do I define my own variables from the command line?
+  * Can I use my own tags?
 
 == How do I document the "module pattern?" ==
 
@@ -52,3 +53,24 @@ These values can then be accessed in your template, like so:
 }}}
 
 To produce this output: _Project release status is Beta, milestone 112.
+
+==Can I use my own tags?==
+
+Yes. In this example we invent an arbitrary tag named "hilited" to indicate that the documentation should be displayed in a bright color.
+
+{{{
+/**
+    Reverse the order of the letters in a string.
+    @hilited
+ */
+function reverse(str) {
+}
+}}}
+
+In your template you can then access that like so:
+
+{{{
+{!
+    if (data.comment.getTag("hilited").length) { output += 'style="color: red"' };
+!}
+}}}
