@@ -56,21 +56,25 @@ To produce this output: _Project release status is Beta, milestone 112.
 
 ==Can I use my own tags?==
 
-Yes. In this example we invent an arbitrary tag named "hilited" to indicate that the documentation should be displayed in a bright color.
+Yes. In this example we invent an arbitrary tag named "hilite" to indicate that the documentation should be displayed in a bright color.
 
 {{{
 /**
     Reverse the order of the letters in a string.
-    @hilited
+    @hilite orange
  */
 function reverse(str) {
 }
 }}}
 
-In your template you can then access that like so:
+In your template you can then access that tag like so:
 
 {{{
 {!
-    if (data.comment.getTag("hilited").length) { output += 'style="color: red"' };
+    if (data.comment.getTag("hilite").length) {
+        output += 'style="color: '+data.comment.getTag("hilite")[0]+'"';
+    }
 !}
 }}}
+
+To produce this output: style="color: orange"
