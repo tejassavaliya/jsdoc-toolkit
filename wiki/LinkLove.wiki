@@ -59,6 +59,9 @@ See who's using or talking about !JsDoc.
 == mapy.cz ==
  * http://api.mapy.cz/static?doc=index
 
+== Mediabird ==
+  * http://www.mediabird.net/documentation/index.html
+
 == !MySpace Developer Platform ==
   * http://developer.myspace.com/community/myspace/myopenspace.aspx
 
