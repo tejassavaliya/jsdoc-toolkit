@@ -12,6 +12,7 @@ Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm
   * How do I define my own variables from the command line?
   * Can I use my own tags?
   * Why isn't the jsdoc template better?
+  * How is this project related to JSDoc?
 
 == How do I document the "module pattern?" ==
 
@@ -85,3 +86,14 @@ To produce this output: style="color: orange"
 The architecture of !JsDoc Toolkit was built around the idea of templates for a very good reason: you are meant to use them. A great deal of work has gone into separating out the template code and designing a simple templating language in order to encourage this to happen.
 
 Traditionally the JSDoc output has tried to look like !JavaDoc but I've moved away from that. Now the template that is included with the standard distribution is purposely generic and is meant to be a starting point for you to create your own customized output.
+
+==How is this project related to JSDoc?==
+
+The term !JsDoc refers to the !JavaDoc-like syntax used to write inline documentation comments in !JavaScript, so one answer is that !JsDoc Toolkit uses the !JsDoc syntax. There are other applications which also use the !JsDoc syntax.
+
+But most people, when they say "JSDoc," are referring to the Perl-based project by that name hosted on Sourceforge. !JsDoc Toolkit is related to that project because they were both created by the same developer: Michael Mathews.
+
+_Michael writes..._
+The original project was first released in 2001 but had been in private use at the company I worked at before that. About a year after JSDoc was publicly released Gabriel Reid took over the project and has done an outstanding job of maintaining, supporting and extending JSDoc.pm ever since. I am extremely grateful for Gabriel's contributions to JSDoc and he certainly deserves front-and-center mention in any credit listing.
+
+But sometime in 2006 I became concerned that the basic architecture of JSDoc.pm was preventing it from keeping up with the renaissance that !JavaScript had undergone, so I started working on what later became a total rewrite. Gabriel, along with many others participated in the initial discussions of this rewrite, but Gabriel declined to join the active development.
