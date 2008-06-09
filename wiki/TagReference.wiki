@@ -1,4 +1,5 @@
 #summary A list of tags used by Jsdoc Toolkit.
+#labels Deprecated
 
 == Summary of Tags For !JsDoc Toolkit ==
 
