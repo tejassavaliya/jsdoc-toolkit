@@ -1,4 +1,5 @@
 #summary Command line options.
+#labels Deprecated
 
 = Command Line Options =
 
