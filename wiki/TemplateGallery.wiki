@@ -1,4 +1,5 @@
 #summary Templates, templates, templates.
+#labels Deprecated
 
 This is a gallery of templates available for use with !JsDoc Toolkit.
 
