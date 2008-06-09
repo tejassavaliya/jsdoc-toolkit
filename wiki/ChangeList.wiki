@@ -1,5 +1,4 @@
 #summary Listed by release number, what has changed.
-#labels Featured
 
 = Change List =
 
