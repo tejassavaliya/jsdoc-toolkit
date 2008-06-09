@@ -1,4 +1,5 @@
 #summary Examples of how to add doc comments to your source code.
+#labels Deprecated
 
 = Functions =
 
