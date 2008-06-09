@@ -1,4 +1,5 @@
 #summary A list of changes for Version 2
+#labels Featured
 
 = Change List for Version 2 =
 
