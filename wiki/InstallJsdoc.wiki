@@ -1,4 +1,5 @@
 #summary A guide to installing JsDoc Toolkit.
+#labels Deprecated
 
 = Installing JsDoc Toolkit =
 
@@ -24,8 +25,6 @@ b17fc09840eb5e421b1d2c1c99e34f0b99edc9ba  \TEMP\Downloaded\jsdoc_toolkit-1.0.2.z
 If you have Java and you've unzipped your !JsDoc Toolkit download, you're finished! Everything you need to run !JsDoc Toolkit is contained in the jsdoc-toolkit folder.
 
 You'll now need to pop open a [http://en.wikipedia.org/wiki/Command_line_interpreter command prompt] and change your working directory to the jsdoc-toolkit folder. To learn what command line options are available to run !JsDoc Toolkit visit the   	CmdlineOptions wiki page.
-
-
 
 
 
