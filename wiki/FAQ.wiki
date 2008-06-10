@@ -10,7 +10,7 @@ Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm
 
   * How do I document the "module pattern?"
   * How do I define my own variables from the command line?
-  * Can I use my own tags?
+  * [FAQ#Can_I_use_my_own_tags Can I use my own tags?]
   * Why isn't the jsdoc template better?
   * How is this project related to JSDoc?
 
