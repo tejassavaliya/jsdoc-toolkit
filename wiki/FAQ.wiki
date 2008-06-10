@@ -6,13 +6,14 @@ This section is "under construction."
 
 *The information here applies to Version 2 of !JsDoc Toolkit.*
 
-  * How do I document the "module pattern?"
-  * [FAQ#How_do_I_define_my_own_variables_from_the_command_line How do I define my own variables from the command line?]
-  * [FAQ#Can_I_use_my_own_tags Can I use my own tags?]
+==I want to know about...==
+  * [FAQ#Documenting_the_module_pattern Documenting the module pattern]
+  * [FAQ#Defining_my_own_variables_from_the_command_line Defining my own variables from the command line]
+  * [FAQ#Using_custom_tags Using custom tags]
   * Why isn't the jsdoc template better?
   * How is this project related to JSDoc?
 
-== How do I document the "module pattern?" ==
+==Documenting the module pattern==
 
 _Use options:_ -p
 
@@ -38,7 +39,7 @@ YOOHOO.myProject.myModule = function () {
 }();
 }}}
 
-==How do I define my own variables from the command line==
+==Defining my own variables from the command line==
 
 Use the `-D` command line option to define one or more variables.
 
@@ -54,9 +55,9 @@ These values can then be accessed in your template, like so:
 
 To produce this output: _Project release status is Beta, milestone 112.
 
-==Can I use my own tags==
+==Using custom tags==
 
-Yes. In this example we invent an arbitrary tag named "hilite" to indicate that the documentation should be displayed in a bright color.
+In this example we invent an arbitrary tag named "hilite" to indicate that the documentation should be displayed in a bright color.
 
 {{{
 /**
