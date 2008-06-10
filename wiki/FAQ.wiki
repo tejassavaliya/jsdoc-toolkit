@@ -4,13 +4,11 @@
 
 This section is "under construction."
 
-The information here applies to Version 2 of !JsDoc Toolkit.
-
-Google's wiki syntax doesn't provide intra-page links so you've gotta scroll I'm afraid.
+*The information here applies to Version 2 of !JsDoc Toolkit.*
 
   * How do I document the "module pattern?"
-  * How do I define my own variables from the command line?
-  * [FAQ#Can_I_use_my_own_tags Can I use my own tags?]
+  * [FAQ#How_do_I_define_my_own_variables_from_the_command_line? How do I define my own variables from the command line?]
+  * [FAQ#Can_I_use_my_own_tags? Can I use my own tags?]
   * Why isn't the jsdoc template better?
   * How is this project related to JSDoc?
 
