@@ -1,5 +1,4 @@
 #summary Advice on integrating with other tools.
-#labels Deprecated
 
 = Running !JsDoc Toolkit from Eclipse =
 
