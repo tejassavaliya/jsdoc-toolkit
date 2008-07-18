@@ -4,23 +4,22 @@
 = Running !JsDoc Toolkit from Eclipse =
 
 _contributed by simon.speich_
-
-You can run !JsDoc Toolkit from within Eclipse by setting up
-Run → External Tools → Open External Tools Dialog...
+You can run jsdoc_toolkit from within eclipse or Aptana by setting up
+Run -> External Tools -> Open External Tools Dialog...
 
 Location
 {{{
-C:\Program Files\Java\jre1.5.0_12\bin\java.exe
+C:\DirectoryToWhereJavaIsLocated\Java\jre1.6.0_07\bin\java.exe
 }}}
 
 Working Directory
 {{{
-C:\DirectoryToWhereJsDocToolkitIsLocated\jsdoc_toolkit
+C:\DirectoryToWhereJsDocToolkitIsLocated\jsdoc-toolkit
 }}}
 
 Arguments
 {{{
--jar app/js.jar app/run.js -r=4 -t=templates/sunny "-d=C:\PathToWhereDocIsSaved" "C:\PathToWebsiteToDocument"
+-jar jsrun.jar app\run.js "C:\PathToSourceFiles" -t=templates\jsdoc -d="C:\PathToOutputDirectory"
 }}}
 
-For more information about arguments see CmdlineOptions
+Note: You need to enclose the paths in quotes if they contain spaces (at least on windows)
