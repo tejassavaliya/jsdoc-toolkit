@@ -14,6 +14,9 @@ See who's using or talking about !JsDoc.
 == !AppJet ==
  * http://appjet.com/docs/libref/
 
+== Axiom Stack ==
+  * http://axiomstack.com/static/docs/
+
 == Coherent MVC ==
   * http://coherentjs.org/docs/api/
 
