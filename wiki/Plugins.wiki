@@ -2,7 +2,7 @@
 
 = Introduction =
 
-New in Version 2 of JsDoc Toolkit is the ability to add your own functionality into the core processing of your source code (before it is ever sent to your template). This can be a convenient and portable way to change the way JsDoc Toolkit works to suit your own needs.
+New in Version 2 of !JsDoc Toolkit is the ability to add your own functionality into the core processing of your source code (before it is ever sent to your template). This can be a convenient and portable way to change the way !JsDoc Toolkit works to suit your own needs.
 
 == It's Easy ==
 
@@ -13,7 +13,7 @@ The interface was designed to be simple. If you are using a plugin, installing i
 Writing a plugin is also simple. The first step is to create a new text file; you can name it whatever you like. The contents of that plugin file should follow this pattern:
 
 {{{
-    JSDOC.PluginManager.registerPlugin(
+JSDOC.PluginManager.registerPlugin(
     "JSDOC.myPluginName",
     {
         onSymbol: function(symbol) {
@@ -22,3 +22,8 @@ Writing a plugin is also simple. The first step is to create a new text file; yo
     }
 );
 }}}
+
+The call to `JSDOC.PluginManager.registerPlugin` takes two arguments:
+
+  * pluginName - can be any string you wish, but must be unique among all the plugins being used at any given time: it acts as a registy name for your particular plugin. The dot pattern in the example is just a naming convention, it doesn't refer to any actual code object, I could have just as easily named it "JSDOC-myPluginName" or any other name for that matter.
+  * functionObject - an object literal that maps events in the !JsDoc Toolkit process model to a function that will be executed each time that event happens. In the example I bind a function to the `onSymbol` event. That means that every time !JsDoc Toolkit creates a `Symbol` instance the associated function will be called.
