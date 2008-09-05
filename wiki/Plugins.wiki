@@ -2,4 +2,23 @@
 
 = Introduction =
 
-Under construction
+New in Version 2 of JsDoc Toolkit is the ability to add your own functionality into the core processing of your source code (before it is ever sent to your template). This can be a convenient and portable way to change the way JsDoc Toolkit works to suit your own needs.
+
+== It's Easy ==
+
+The interface was designed to be simple. If you are using a plugin, installing it is as easy as saving the plugin file to the app/plugins directory - that's it. The plugin will automatically be loaded and used for you.
+
+== For Example ==
+
+Writing a plugin is also simple. The first step is to create a new text file; you can name it whatever you like. The contents of that plugin file should follow this pattern:
+
+{{{
+    JSDOC.PluginManager.registerPlugin(
+    "JSDOC.myPluginName",
+    {
+        onSymbol: function(symbol) {
+            // modify properties of the symbol here
+        }
+    }
+);
+}}}
