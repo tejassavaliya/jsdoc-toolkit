@@ -34,8 +34,8 @@ The function map binds !JsDoc Toolkit events to functions that will be called wh
 
 The names of events currently supported by the JSDOC.!PluginManager are...
 
-  * onSymbol - fired every time a new code symbol is created.
-  * onDocCommentSrc -
+  * onSymbol - fired every time a new code symbol is created. The handler will be passed a `symbol` argument.
+  * onDocCommentSrc - fired every time comment is found in your source code. The handler will be passed a `comment` argument. You can modify the `comment.src` property of this argument to affect the raw source code of the comment.
   * onDocCommentTags -
   * onDocTagSynonym -
   * onDocTag -
