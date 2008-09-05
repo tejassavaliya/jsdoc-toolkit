@@ -32,7 +32,7 @@ The call to `JSDOC.PluginManager.registerPlugin` takes two arguments:
 
 The function map binds !JsDoc Toolkit events to functions that will be called when those events occur. In the API example the event names is `onSymbol` which means that whenever a `Symbol` instance is created the function will be called. The argument to that function will be the newly created `Symbol` instance. You can record, modify, add or delete any symbol property within your handler function.
 
-The names of events currently supported by the !JSDOC.PluginManager are...
+The names of events currently supported by the JSDOC.!PluginManager are...
 
   * onSymbol - fired every time a new code symbol is created.
   * onDocCommentSrc -
