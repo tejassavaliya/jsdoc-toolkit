@@ -32,7 +32,7 @@ It is not technically required for you to use the @param tag since !JsDoc Toolki
 The most basic @param documentation simply provides the name of the parameter. This should match the parameter name in the function source code.
 
 {{{
- /**
+/**
   * @param userName
   */
  function logIn(userName) {
