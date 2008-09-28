@@ -18,8 +18,8 @@ The param tag allows you to document information about the parameters to a funct
 
 {{{
 /**
-  * @param userName The name of the user.
-  */
+ * @param userName The name of the user.
+ */
  function logIn(userName) {
  	// ...
  }
@@ -33,8 +33,8 @@ The most basic @param documentation simply provides the name of the parameter. T
 
 {{{
 /**
-  * @param userName
-  */
+ * @param userName
+ */
  function logIn(userName) {
  	// ...
  }
