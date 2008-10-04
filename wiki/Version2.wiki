@@ -1,3 +1,0 @@
-#summary Basic documentation, including complete tag reference.
-
-The new wiki for Version 2 is now available at the following URL: [http://www.jsdoctoolkit.org/wiki/index.php?page=Home]
