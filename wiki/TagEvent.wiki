@@ -1,4 +1,4 @@
-#summary @version
+#summary @event
 
 This tag is proposed for release 2.1.
 
