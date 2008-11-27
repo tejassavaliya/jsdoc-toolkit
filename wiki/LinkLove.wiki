@@ -98,11 +98,11 @@ See who's using or talking about !JsDoc.
 == !SlikCalc ==
  * http://slikcalc.selfcontained.us/docs/1.1/
 
-== Storix ==
- * http://storix.sourceforge.net/documentation/index.html
-
 == !SproutCore ==
  * http://www.sproutcore.com/
+
+== Storix ==
+ * http://storix.sourceforge.net/documentation/index.html
 
 == !TimePlot ==
  * http://simile.mit.edu/timeplot/
