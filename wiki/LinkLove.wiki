@@ -26,11 +26,17 @@ See who's using or talking about !JsDoc.
 == Frozen Toolkit ==
  * http://frozentoolkit.frozen-o.com/
 
+== Glam Platform ==
+ * http://wiki.developer.glam.com/api/index.html
+
 == Google Gadgets ==
   * http://code.google.com/apis/gadgets/docs/reference/gadgets.json.html
 
 == GPS Gate ==
   * http://gpsgate.com/docs/gpsgateservices/jsdoc/index.html
+
+== GREUtils ==
+ * http://greutils.googlecode.com/svn/trunk/jsdoc/index.html
 
 == Helma ==
  * http://helma.zumbrunn.com/reference/
@@ -50,6 +56,9 @@ See who's using or talking about !JsDoc.
 == jsdoc toolkit ext ==
   * http://sourceforge.net/projects/jsdoc-tk-ext/
 
+== JSXGraph ==
+ * http://jsxgraph.uni-bayreuth.de/docs/index.html
+
 == jTemplates ==
  * http://jtemplates.tpython.com/doc/
 
@@ -68,6 +77,9 @@ See who's using or talking about !JsDoc.
 == !MySpace Developer Platform ==
   * http://developer.myspace.com/community/myspace/myopenspace.aspx
 
+== Naos Framework
+ * http://www.naos-framework.com/docs/api/javascript/html/symbols/NaosTools.html
+
 == Open Kosmaczewski ==
  * [http://kosmaczewski.net/2007/08/02/web-development-equal-software-development/ Web Development == Software Development?]
 
@@ -82,6 +94,12 @@ See who's using or talking about !JsDoc.
 
 == Sarissa==
  * http://dev.abiss.gr/sarissa
+
+== !SlikCalc ==
+ * http://slikcalc.selfcontained.us/docs/1.1/
+
+== Storix ==
+ * http://storix.sourceforge.net/documentation/index.html
 
 == !SproutCore ==
  * http://www.sproutcore.com/
