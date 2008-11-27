@@ -77,7 +77,7 @@ See who's using or talking about !JsDoc.
 == !MySpace Developer Platform ==
   * http://developer.myspace.com/community/myspace/myopenspace.aspx
 
-== Naos Framework
+== Naos Framework ==
  * http://www.naos-framework.com/docs/api/javascript/html/symbols/NaosTools.html
 
 == Open Kosmaczewski ==
