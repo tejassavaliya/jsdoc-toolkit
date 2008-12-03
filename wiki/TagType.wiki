@@ -2,7 +2,7 @@
 
 == The @type Tag ==
 
-The `@type` tag allows you to document the type of value a variable refers to, or the typr of value returned by a function.
+The `@type` tag allows you to document the type of value a variable refers to, or the type of value returned by a function.
 
 === Syntax ===
 
