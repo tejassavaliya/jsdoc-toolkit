@@ -56,6 +56,10 @@ See who's using or talking about !JsDoc.
 == jsdoc toolkit ext ==
   * http://sourceforge.net/projects/jsdoc-tk-ext/
 
+== JS-ITM ==
+
+ * [http://static.peace-love-freedom.net/js-itm/trunk/jsdoc/index.html] JS-ITM is a small library, written by Udi Oron, which is used to convert between Israel Transverse Mercator coordinates and GPS (wgs84) coordinates.
+
 == JSXGraph ==
  * http://jsxgraph.uni-bayreuth.de/docs/index.html
 
