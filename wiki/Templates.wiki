@@ -18,7 +18,7 @@ Whatever else you define in that file, or whatever other files you include in th
 
 === The publish() method===
 
-You'll notice from the previous example that the `publish()` function has a formal parameter declared, name `SymbolSet`. This is not strictly required, but is recommended as a convention. In fact your publish method will be automatically called by !JsDoc Toolkit when all the source files have been parsed. That parsing results in a single object of type !JsDoc.SymbolSet being created, which is then passed into your publish function. The idea is that your publish function will contain some code to process the symbols in the !SymbolSet, creating output files as it does.
+You'll notice from the previous example that the `publish()` function has a formal parameter declared, name `SymbolSet`. This is not strictly required, but is recommended as a convention. In fact your publish method will be automatically called by !JsDoc Toolkit when all the source files have been parsed. That parsing results in a single object of type `JsDoc.SymbolSet` being created, which is then passed into your publish function. The idea is that your publish function will contain some code to process the symbols in the !SymbolSet, creating output files as it does.
 
 === Using the !SymbolSet Object ===
 
@@ -76,7 +76,7 @@ var myTemplate = new JsDoc.JsPlate("path/to/my/template.tmpl");
 
 Note: that the `.tmpl` filename extension is conventional but in no way required.
 
-If you plan to distribute your template and intend for it to be saved into the standard `templates` directory, it is a good idea to use filepaths relative to the `app/run.js` location, rather than hard-coding the full path. The path to to the `app/run.js` can always be found by referring to `[http://www.JsDoctoolkit.org/docs/JsDoc/symbols/SYS.html SYS.pwd]`. So a more flexible way to refer to the templates directory is like so:
+If you plan to distribute your template and intend for it to be saved into the standard `templates` directory, it is a good idea to use filepaths relative to the `app/run.js` location, rather than hard-coding the full path. The path to to the `app/run.js` can always be found by referring to `SYS.pwd`. So a more flexible way to refer to the templates directory is like so:
 
 {{{
 var myTemplate = new JsDoc.JsPlate(SYS.pwd+"../templates/my/template.tmpl");
@@ -95,7 +95,7 @@ function publish(SymbolSet) {
 
 === What To Do With the Output ===
 
-Once you have processed some data through your template you will have some "output" -- a string containing the formatted results. What you do with that string is up to you, but likely you will want to write it to an output file. Using the `[http://www.JsDoctoolkit.org/docs/JsDoc/symbols/IO.html IO]` namespaced methods, this is quite easy.
+Once you have processed some data through your template you will have some "output" -- a string containing the formatted results. What you do with that string is up to you, but likely you will want to write it to an output file. Using the `IO` namespaced methods, this is quite easy.
 
 {{{
 var output = myTemplate.process(mySymbol);
@@ -112,4 +112,4 @@ IO.saveFile(outDir, "myFilename", output);
 
 
 === See Also ===
-  * An overview of the [#!JsPlate] templating language.
+  * An overview of the JsPlate templating language.
