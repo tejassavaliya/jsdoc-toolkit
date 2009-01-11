@@ -1,4 +1,5 @@
 #summary A list of every tag.
+#labels Featured
 
   * [TagAugments @augments] - Indicate this class uses another class as its "base."
   * [TagAuthor @author] - Indicate the author of the code being documented.
