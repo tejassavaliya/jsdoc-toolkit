@@ -1,5 +1,4 @@
 #summary Developers who have contributed code to JsDoc Toolkit.
-#labels Featured
 
   * * Brett Fattori * Yet more patches to support handlers, allowing JsDoc Toolkit to parse new source code languages.
   * * bfattori* Patch to allow the type of a @param tag come after the name -- issue #61.
