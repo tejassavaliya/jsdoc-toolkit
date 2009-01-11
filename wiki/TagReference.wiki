@@ -1,31 +1,38 @@
-#summary A list of tags used by Jsdoc Toolkit.
-#labels Deprecated
+#summary A list of every tag.
 
-== Summary of Tags For !JsDoc Toolkit ==
-
-|| *tag title* || *syntax*                          || *description* ||
-|| augments   || `@augments objname`  || all the properties and methods of the objname are attached to this (synonym `extends`).    ||
-|| class || `@class description`                    || used with a constructor to provide a description of the class separate from the constructor's description. used with an object literal to treat the object as a class. ||
-|| config || `@config {type} propertyname description`   || used to document a required property of a parameter. if it follows a parameter then it is assumed to apply to that parameter. ||
-|| constructor || `@constructor`                    || mark this function as a constructor. ||
-|| deprecated || `@deprecated description`                    || used to provide information about a deprecation of a class, method or object. ||
-|| description || `@description`                    || a description of this (synonym `desc`). this is an alternative to including an untagged description before any tags. ||
-|| event|| `@event` || mark this method as an event on the containing class. ||
-|| example|| `@example examplecode`                    || an example of how to use the function or object. ||
-|| exception   || `@exception {type} description`  || explain an error a function can throw (synonym `throws`).    ||
-|| fileOverview  || `@fileOverview description`  || describe the entire file.    ||
-|| function  || `@function`  || force the object to be treated as a function.    ||
-|| ignore      || `@ignore`        || never show this in the documentation. ||
-|| inherits      || `@inherits objname`        || that objname is a property or method attached to this. ||
-|| memberOf  || `@memberOf objname`  || this function or object is a method or property of objname.    ||
-|| name  || `@name objname`  || use the given name to document the object, and ignore whatever is in the code that follows.    ||
-|| namespace  || `@namespace description`  || synonym for `@static` and `@class description`.    ||
-|| param       || `@param {type} name description`    || explain a function parameter.                 ||
-|| param       || `@param {type} [name] description`  || an optional parameter.                           ||
-|| private     || `@private`       || will be excluded from the documentation without the `-p` option.      ||
-|| property       || `@property {type} name description`  || describe a property of this object. used as an alternative to documenting the property object itself.                           ||
-|| return      || `@return {type} description`        || explain a function return value.            ||
-|| scope      || `@scope objname`        || the next object literal's properties/methods are attached to objname. ||
-|| scope      || `@scope objname.prototype`        || the next object literal's properties/methods are attached to objname's prototype. ||
-|| static      || `@static`        || used with a class to declare the class has no constructor. ||
-|| type      || `@type whattype`        || the property is of type whattype. ||
+  * [TagAugments @augments] - Indicate this class uses another class as its "base."
+  * [TagAuthor @author] - Indicate the author of the code being documented.
+  * @argument - Deprecated synonym for [TagParam @param].
+  * [TagBorrows @borrows] _that_ as _this_ - Document that class's member as if it were a member of this class.
+  * [TagClass @class] - Provide a description of the class (versus the constructor).
+  * [TagConstant @constant] - Indicate that a variable's value is a constant.
+  * [TagConstructor @constructor] - Identify a function is a constructor.
+  * [TagConstructs @constructs] - Identicate that a lent function will be used as a constructor.
+  * [TagDefault @default] - Describe the default value of a variable.
+  * [TagDeprecated @deprecated] - Indicate use of a variable is no longer supported.
+  * [TagDescription @description] - Provide a description (synonym for an untagged first-line).
+  * [TagEvent @event] - Describe an event handled by a class.
+  * [TagExample @example] - Provide a small code example, illustrating usage.
+  * @extends - Synonym for [TagAugments @augments].
+  * [TagField @field] - Indicate that the variable refers to a non-function.
+  * [TagFileOverview @fileOverview] - Provides information about the entire file.
+  * [TagFunction @function] - Indicate that the variable refers to a function.
+  * [TagIgnore @ignore] - Indicate JsDoc Toolkit should ignore the variable.
+  * [TagInner @inner] - Indicate that the variable refers to an inner function (and so is also @private).
+  * [TagLends @lends] - Document that all an object literal's members are members of a given class.
+  * {[TagLink @link] ...} - Like [TagSee @see] but can be used within the text of other tags.
+  * [TagMemberOf @memberOf] - Document that this variable refers to a member of a given class.
+  * [TagName @name] - Force JsDoc Toolkit to ignore the surrounding code and use the given variable name instead.
+  * [TagNamespace @namespace] - Document an object literal is being used as a "namespace."
+  * [TagParam @param] - Describe a function's parameter.
+  * [TagPrivate @private] - Indicate a variable is private (use the -p command line option to include these).
+  * [TagProperty @property] - Document a property of a class from within the constructor's doclet.
+  * [TagPublic @public] - Indicate an inner variable is public.
+  * [TagRequires @requires] - Describe a required resource.
+  * [TagReturns @returns] - Describe the return value of a function.
+  * [TagSee @see] - Describe a related resource.
+  * [TagSince @since] - Indicate that a feature has only been available on and after a certain version number.
+  * [TagStatic @static] - Indicate that accessing the variable does not require instantiation of its parent.
+  * [TagThrows @throws] - Describe the exception that a function might throw.
+  * [TagType @type] - Describe the expected type of a variable's value or the value returned by a function.
+  * [TagVersion @version] - Indicate the release version of this code.
