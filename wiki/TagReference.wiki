@@ -17,7 +17,7 @@
   * [TagField @field] - Indicate that the variable refers to a non-function.
   * [TagFileOverview @fileOverview] - Provides information about the entire file.
   * [TagFunction @function] - Indicate that the variable refers to a function.
-  * [TagIgnore @ignore] - Indicate JsDoc Toolkit should ignore the variable.
+  * [TagIgnore @ignore] - Indicate !JsDoc Toolkit should ignore the variable.
   * [TagInner @inner] - Indicate that the variable refers to an inner function (and so is also @private).
   * [TagLends @lends] - Document that all an object literal's members are members of a given class.
   * {[TagLink @link] ...} - Like [TagSee @see] but can be used within the text of other tags.
