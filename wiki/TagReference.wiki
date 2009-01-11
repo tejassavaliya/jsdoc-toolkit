@@ -22,7 +22,7 @@
   * [TagLends @lends] - Document that all an object literal's members are members of a given class.
   * {[TagLink @link] ...} - Like [TagSee @see] but can be used within the text of other tags.
   * [TagMemberOf @memberOf] - Document that this variable refers to a member of a given class.
-  * [TagName @name] - Force JsDoc Toolkit to ignore the surrounding code and use the given variable name instead.
+  * [TagName @name] - Force !JsDoc Toolkit to ignore the surrounding code and use the given variable name instead.
   * [TagNamespace @namespace] - Document an object literal is being used as a "namespace."
   * [TagParam @param] - Describe a function's parameter.
   * [TagPrivate @private] - Indicate a variable is private (use the -p command line option to include these).
