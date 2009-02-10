@@ -1,0 +1,12 @@
+#summary A growing list of code patterns and solutions for documenting them
+
+= Pattern Name =
+
+Optional description of the pattern here.
+
+{{{
+example.code(showing, pattern, here);
+}}}
+
+
+(repeat)
