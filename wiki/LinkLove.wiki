@@ -8,6 +8,9 @@ See who's using or talking about !JsDoc.
 == Adobe (Mick Lerlop) ==
   * [http://blogs.adobe.com/acdc/2008/11/generating_javascript_document.html]
 
+== Actuate JavaScript ==
+  * [http://www.birt-exchange.com/documentation/JavaComponents10/JSAPI-JSdoc/index.html]
+
 == alternateidea ==
  * [http://alternateidea.com/blog/articles/2007/12/28/widgets-the-yui-way Widgets the YUI Way]
 
