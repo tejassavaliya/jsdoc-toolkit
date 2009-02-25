@@ -95,7 +95,7 @@ var Observable =
  * MyClass.prototype gets the Observable API
  * @class
  * @borrows Observable#observe as #observe
- * @borrows Observable#notify as #observe
+ * @borrows Observable#notify as #notify
  */
 var MyClass = function() {
   //...
