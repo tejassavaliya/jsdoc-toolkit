@@ -1,6 +1,6 @@
 #summary @event
 
-This tag is proposed for release 2.1.
+This tag is available as of release 2.1.
 
 == The @event Tag ==
 
