@@ -201,6 +201,14 @@ The `if` mark-up allows you conditionally output some text or field based on a t
 
 Would only add "The Best" to the output when the `thing` was "Bob." You can of course nest `for` and `if` as much as you need, perhaps only looping in certain conditions, or only doing certain things for certain loop iterations.
 
+{{
+<if test="thing=='Bob'">
+	<em>The Best</em>
+<else />
+	<em>meh!</em>
+</if>
+}}}
+
 = Creating Output Files =
 
 == Saving Generated Output To Files ==
@@ -227,8 +235,6 @@ From within your `publish.js` file you can copy files from the template director
 {{{
 	IO.copyFile(context.t+"mystyle.css", context.d);
 }}}
-
-
 
 
 
