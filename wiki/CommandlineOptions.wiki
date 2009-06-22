@@ -67,6 +67,9 @@ All options are either in the form of `-x` or `-x=value`. (Note that spaces are 
   -T or --test
           Run all unit tests and exit.
 
+  -u or --unique
+          Force file names to be unique, but not based on symbol names.
+
   -v or --verbose
           Provide verbose feedback about what is happening.
 
