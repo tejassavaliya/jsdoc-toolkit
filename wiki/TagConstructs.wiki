@@ -28,5 +28,7 @@ var Person = makeClass(
 );
 }}}
 
+Note: that when using this tag you should not also use the `@constructor` or `@class` tag, all documentation for the class should go in the `@constructs` doc comment instead.
+
 == See Also ==
   * The [TagLends @lends] tag.
