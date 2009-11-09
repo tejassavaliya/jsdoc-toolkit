@@ -76,7 +76,7 @@ See who's using or talking about !JsDoc.
  * http://jtemplates.tpython.com/doc/
 
 == !LabKey ==
-  * https://www.labkey.org/download/clientapi_docs/
+  * https://www.labkey.org/download/clientapi_docs/javascript-api/
 
 == Maven JSTools Plugin ==
  * http://dev.abiss.gr/mvn-jstools/
