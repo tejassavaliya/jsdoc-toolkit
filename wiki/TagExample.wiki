@@ -22,3 +22,9 @@ The `@example` tag allows you to provide a snippet of code that illustrates the 
  * bleeper.flop();
  */
 }}}
+
+=== Note ===
+
+The @example tag is not intended to be used to generate "inline" examples, if 
+you want this, you need to do it via HTML markup embedded within a @description 
+block, using the `<code>` tag, for example.
