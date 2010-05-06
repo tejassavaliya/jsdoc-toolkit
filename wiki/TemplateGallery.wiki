@@ -4,7 +4,7 @@ This is a gallery of templates available for use with !JsDoc Toolkit.
 
 = Version 2 Templates =
 
-== CodeView ==
+== !CodeView ==
 
 Wouter Bos' new HTML template for JSDoc, called Codeview.
 
