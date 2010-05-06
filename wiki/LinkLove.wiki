@@ -23,6 +23,10 @@ See who's using or talking about !JsDoc.
 == Axiom Stack ==
   * http://axiomstack.com/static/docs/
 
+== The Bright Lines ==
+  * [http://www.thebrightlines.com/2010/03/28/document-your-javascript-interview-with-michael-mathews-of-jsdoc/ Interview]
+  * [http://www.thebrightlines.com/2010/05/06/new-template-for-jsdoctoolkit-codeview/ Code View Template]
+
 == Coherent MVC ==
   * http://coherentjs.org/docs/api/
 
