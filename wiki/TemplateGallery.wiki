@@ -4,6 +4,12 @@ This is a gallery of templates available for use with !JsDoc Toolkit.
 
 = Version 2 Templates =
 
+== CodeView ==
+
+Wouter Bos' new HTML template for JSDoc, called Codeview.
+
+  * http://www.thebrightlines.com/2010/05/06/new-template-for-jsdoctoolkit-codeview/
+
 == jProton ==
 
 Pedro Simonetti's amazing contribution has collapsing menus, and many customizations. Definitely worth a look.
