@@ -121,6 +121,9 @@ See who's using or talking about !JsDoc.
 == Storix ==
  * http://storix.sourceforge.net/documentation/index.html
 
+== Tably Template ==
+ * http://code.google.com/p/jsdoc-tably-template/
+
 == !TimePlot ==
  * http://simile.mit.edu/timeplot/
 
