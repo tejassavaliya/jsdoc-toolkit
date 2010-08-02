@@ -112,7 +112,7 @@ See who's using or talking about !JsDoc.
 == Sarissa==
  * http://dev.abiss.gr/sarissa
 
-== Simon Spiech on "How to create JavaScript documentation in PhpStorm" ==
+== Simon Spiech on "How to create !JavaScript documentation in !PhpStorm" ==
  * http://www.speich.net/articles/?cat=4
 
 == !SlikCalc ==
