@@ -18,7 +18,7 @@ The `@memberOf` tag allows you to document what you consider the "parent" or con
 var Tools = {};
 
 /** @namespace */
-var Tools.Dom = {};
+Tools.Dom = {};
 
 /** @memberOf Tools.Dom */
 var hiliteSearchTerm = function(term) {
