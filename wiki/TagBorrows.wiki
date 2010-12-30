@@ -38,4 +38,4 @@ Any documentation for `Remote#transfer` will also appear as documentation for `S
 === See Also ===
 
   * The [TagAugments @augments] tag.
-  * The [Taglends @lends] tag.
+  * The [TagLends @lends] tag.
