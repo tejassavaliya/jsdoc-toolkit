@@ -189,13 +189,22 @@ function makeSignature(params) {
 	return signature;
 }
 
-/** Find symbol {@link ...} strings in text and turn into html links */
-function resolveLinks(str, from) {
-	str = str.replace(/\{@link ([^} ]+) ?\}/gi,
-		function(match, symbolName) {
-			return new Link().toSymbol(symbolName);
-		}
-	);
-	
-	return str;
+/**
+ * Converts {@link|see symbolName opt_linkText} tokens to a HTML links.
+ * @param {string} str A JSDoc comment that might contain link tags.
+ * @return {string} The description with all link tags replaced with
+ *   actual HTML links.
+ */
+function resolveLinks(str) {
+  if (!str) {
+    return '';
+  }
+  return str.replace(
+      /\{@[link|see]+\s+([^}\s]+)\s*([^}]+)?\}/gi,
+      function(match, symbolName, linkText) {
+        if (!linkText) {
+          linkText = symbolName;
+        }
+        return new Link().toSymbol(symbolName).withText(linkText);
+      });
 }
